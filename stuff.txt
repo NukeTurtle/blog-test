@@ -1,0 +1,95 @@
+// Add a toggle event to the Archive button
+        document.addEventListener("DOMContentLoaded", function() {
+            const archiveButtons = document.querySelectorAll(".archive-post-button");
+
+            archiveButtons.forEach(button => {
+                button.addEventListener("click", function() {
+                    // Toggle the innerHTML text
+                    if (button.innerHTML === "Unarchive") {
+                        button.innerHTML = "Archive";
+                        showToast('Post archived.', 'success');
+                    } else {
+                        button.innerHTML = "Unarchive";
+                        showToast('Post unarchived.', 'success');
+                    }
+
+                    // Your button's click event logic here
+                });
+            });
+        });
+
+showToast(data.message, 'success');
+
+// Close the modal when clicking outside the modal
+            window.addEventListener('click', (e) => {
+                if (e.target === modal) {
+                    closeModal();
+                }
+            });
+
+            // Close the modal when pressing the "Esc" key
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'Escape') {
+                    closeModal();
+                }
+            });
+
+            // Function to close the modal
+            function closeModal() {
+                modal.style.display = 'none';
+            }
+
+jnbcshegiu332g23!ehgb3kbKJF
+
+
+scp "D:\SERVER_BACKUP\favicon.ico" /usr/local/apache/htdocs/
+
+
+Username: root
+Password: You didn't opt-in to print initial root password to STDOUT.
+Password stored to /etc/gitlab/initial_root_password. This file will be cleaned  up in first reconfigure run after 24 hours.
+
+
+
+sudo EXTERNAL_URL="http://spooky.si/gitlab" apt-get install gitlab-ee
+sudo EXTERNAL_URL="http://spooky.si/gitlab" apt-get install gitlab-ee=16.6.0-ee.0
+
+
+
+
+<VirtualHost *:80>
+  ServerName gitlab.spooky.si
+  ServerSignature Off
+
+  ProxyPreserveHost On
+  AllowEncodedSlashes NoDecode
+
+  <Location />
+  Require all granted
+  ProxyPassReverse http://127.0.0.1:8080
+  ProxyPassReverse gitlab.spooky.si
+  </Location>
+
+  RewriteEngine on
+  RewriteCond %{DOCUMENT_ROOT}/%{REQUEST_FILENAME} !-f
+  RewriteRule .* http://127.0.0.1:8080%{REQUEST_URI} [P,QSA]
+
+  # needed for downloading attachments
+  DocumentRoot /opt/gitlab/embedded/service/gitlab-rails/public
+
+  #Set up apache error documents, if back end goes down (i.e. 503 error) then a maintenance/deploy page is thrown up.
+  ErrorDocument 404 /404.html
+  ErrorDocument 422 /422.html
+  ErrorDocument 500 /500.html
+  ErrorDocument 503 /deploy.html
+
+  LogFormat "%{X-Forwarded-For}i %l %u %t \"%r\" %>s %b" common_forwarded
+  ErrorLog  /home/turtle/www/spooky/gitlab/logs/gitlab.spooky.si_error.log
+  CustomLog /home/turtle/www/spooky/gitlab/logs/gitlab.spooky.si_forwarded.log common_forwarded
+  CustomLog /home/turtle/www/spooky/gitlab/logs/gitlab.spooky.si_access.log combined env=!dontlog
+  CustomLog /home/turtle/www/spooky/gitlab/logs/gitlab.spooky.si.log combined
+</VirtualHost>
+
+
+
+6GZ7ZD3

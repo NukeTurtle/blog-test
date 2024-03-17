@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1.0, user-scalable=0">
+  <!-- <link rel="stylesheet" href="./css/bootstrap.min.css"> -->
+  <link rel="stylesheet" href="./css/main.css">
+  <!-- <script src="./js/bootstrap.min.js"></script> -->
+  <link rel="shortcut icon" href="./images/favicon.jpg" type="image/x-icon">
+  <title>Anna - About</title>
+  <script>
+    function updateURL(itemName) {
+      window.history.pushState({}, '', itemName);
+    }
+  </script>
+</head>
+
+<body id="home">
+  <nav class="navbar">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item">
+          <img class="logo" src="./images/favicon.jpg" alt="" srcset="">
+          <a aria-current="page" href="/">Anna Kozh</a>
+        </li>
+        <li class="nav-item">
+          <a aria-current="page" href="/">Portfolio</a>
+        </li>
+        <li class="nav-item">
+          <a aria-current="page" href="/blog">Blog</a>
+        </li>
+        <li class="nav-item icon download" style="background: url(./images/cloud-arrow-down-solid.svg) no-repeat;">
+          <a class="resume-placeholder " href="">
+              R&#233sum&#233</a>
+        </li>
+      </ul>
+  </nav>
+
+  <!-- <header>
+    <div id="hero">
+      <img src="" alt="" srcset="">
+      <div class="quote">
+        <h1>UX Designer who listens</h1>
+        <sub>MY DEVELOPERS</sub>
+      </div>
+      <div class="quote">
+        <h1>Just ask Anna</h1>
+        <sub>MY PRODUCT MANAGER</sub>
+      </div>
+    </div>
+  </header> -->
+
+ 
+
+  <div class="text-center">
+
+    <div class="uniform_box">
+    </div>
+
+    <section id="pastExperiences">
+
+      <div class="experienceBlock">
+        <img class="xpLogo" src="../images/simpology.png" />
+        <h2 class="xpTitle">Product Owner & UI/UX Lead, Simpology</h2>
+        <p class="xpText">
+          In 2022 I joined Simpology .....Lorem ipsum dolor sit amet consectetur. Eget consequat luctus a dui eu morbi eget dui arcu. Id ac justo odio felis eu. Consectetur sit ornare nisl cras. Lobortis massa nibh eget a.
+        </p>
+        <ul class="xpLink">
+          <li><a href="/posts/5">Case study “Digital income”</a></li>
+          <li><a href="/posts/5">Case study “Digital income”</a></li>
+          <li><a href="/posts/5">Case study “Digital income”</a></li>
+        </ul>
+      </div>
+
+      <div class="experienceBlock">
+        <img class="xpLogo" src="../images/skoolbag.png" />
+        <h2 class="xpTitle">Product Owner & Design Lead, SkoolBag</h2>
+        <p class="xpText">
+          In 2020 I joined SkoolBag .....Lorem ipsum dolor sit amet consectetur. Eget consequat luctus a dui eu morbi eget dui arcu. Id ac justo odio felis eu. Consectetur sit ornare nisl cras. Lobortis massa nibh eget a.
+        </p>
+          <ul class="xpLink">
+            <li><a href="/posts/5">Case study “Digital income”</a></li>
+            <li><a href="/posts/5">Case study “Digital income”</a></li>
+            <li><a href="/posts/5">Case study “Digital income”</a></li>
+          </ul>
+      </div>
+
+      <div class="experienceBlock">
+        <img class="xpLogo" src="../images/asg.png" />
+        <h2 class="xpTitle">Senior UX Consultant, ASG Group</h2>
+        <p class="xpText">
+          In 2016 I joined ASG Group .....Lorem ipsum dolor sit amet consectetur. Eget consequat luctus a dui eu morbi eget dui arcu. Id ac justo odio felis eu. Consectetur sit ornare nisl cras. Lobortis massa nibh eget a.        <div class="xpLink"></div>
+      </div>
+
+      <div class="experienceBlock">
+        <img class="xpLogo" src="../images/voicebox.png" />
+        <h2 class="xpTitle">UX Designer, VoiceBox Technologies</h2>
+        <p class="xpText">
+          In 2013 I joined VoiceBox Technologies .....Lorem ipsum dolor sit amet consectetur. Eget consequat luctus a dui eu morbi eget dui arcu. Id ac justo odio felis eu. Consectetur sit ornare nisl cras. Lobortis massa nibh eget a.        <div class="xpLink"></div>
+      </div>
+
+    </section>
+  </div>
+
+  <footer>
+    <h3>Get in touch</h3>
+    <a href="https://www.linkedin.com/in/anna-kozhevnikova/" target="_blank">LinkedIn</a>
+    <a id="emailCopy" onclick="copy()">
+      <span class="tooltiptext" id="tooltip"></span>
+      annakozh@gmail.com
+    </a>
+  </footer>
+  <script>
+    function copy() {
+      var copyText = document.getElementById("emailCopy").innerText;
+      navigator.clipboard.writeText(copyText);
+      
+      var tooltip = document.getElementById("tooltip");
+      tooltip.innerHTML = "Copied";
+      tooltip.style.display = "block";
+      setTimeout(
+        function() {
+          tooltip.style.display = "none";
+        }, 2000 )
+      }
+    
+    document.addEventListener('DOMContentLoaded', function() {
+      const placeholder = document.querySelector('.resume-placeholder');
+
+      placeholder.addEventListener('click', function() {
+          // Replace 'your_pdf_url.pdf' with the actual URL of your PDF file
+          const pdfUrl = '../uploads/love_language.pdf';
+
+          // Open a new tab with the PDF
+          window.open(pdfUrl, '_blank');
+      });
+    });
+  </script>
+  <script>
+    // Function to set selected link
+    function setSelectedLink() {
+            let formattedLink;
+            const selectedLink = localStorage.getItem('selectedLink');
+            console.log("Selected link from storage:", selectedLink);
+            switch(selectedLink) {
+                case "/":
+                    formattedLink = "/"
+                    break;
+                case "/blog":
+                    formattedLink = "blog"
+                    break;
+                case "":
+                    formattedLink = "#"
+                    break;
+            }
+            if (selectedLink) {
+                const link = document.querySelector('.nav-item:not(:first-of-type) a[href="' + formattedLink + '"]');
+                console.log("Link found:", link);
+
+                if (link) {
+                    link.classList.add('selected');
+                }
+            }
+        }
+    document.addEventListener('DOMContentLoaded', function() {
+        const navLinks = document.querySelectorAll('.nav-item:not(:first-of-type) a');
+        console.log("Found navigation links:", navLinks);
+
+        // Add click event listener to each link
+        navLinks.forEach(link => {
+            link.addEventListener('click', function(event) {
+                // Remove 'selected' class from all links
+                navLinks.forEach(link => {
+                    link.classList.remove('selected');
+                });
+
+                // Add 'selected' class to the clicked link
+                this.classList.add('selected');
+
+                // Store selected link in local storage
+                localStorage.setItem('selectedLink', this.getAttribute('href'));
+            });
+        });
+      });
+
+        // Set selected link when the page loads
+        setSelectedLink();
+  </script>
+</body>
+</html>

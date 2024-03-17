@@ -1,0 +1,1490 @@
+sending incremental file list
+created directory ./-
+./
+bin -> usr/bin
+lib -> usr/lib
+lib32 -> usr/lib32
+lib64 -> usr/lib64
+libx32 -> usr/libx32
+sbin -> usr/sbin
+backup/
+backup/backup.tar.gz
+backup/bin -> usr/bin
+backup/lib -> usr/lib
+backup/lib32 -> usr/lib32
+backup/lib64 -> usr/lib64
+backup/libx32 -> usr/libx32
+backup/rsync.log
+backup/sbin -> usr/sbin
+backup/backup/
+backup/backup/backup.tar.gz
+backup/backup/rsync.log
+backup/boot/
+backup/boot/System.map-5.15.0-100-generic
+backup/boot/System.map-5.15.0-72-generic
+backup/boot/config-5.15.0-100-generic
+backup/boot/config-5.15.0-72-generic
+backup/boot/initrd.img -> initrd.img-5.15.0-100-generic
+backup/boot/initrd.img-5.15.0-100-generic
+backup/boot/initrd.img-5.15.0-72-generic
+backup/boot/initrd.img.old -> initrd.img-5.15.0-72-generic
+backup/boot/vmlinuz -> vmlinuz-5.15.0-100-generic
+backup/boot/vmlinuz-5.15.0-100-generic
+backup/boot/vmlinuz-5.15.0-72-generic
+backup/boot/vmlinuz.old -> vmlinuz-5.15.0-72-generic
+backup/boot/efi/
+backup/boot/efi/EFI/
+backup/boot/efi/EFI/BOOT/
+backup/boot/efi/EFI/BOOT/BOOTX64.EFI
+backup/boot/efi/EFI/BOOT/fbx64.efi
+backup/boot/efi/EFI/BOOT/mmx64.efi
+backup/boot/efi/EFI/ubuntu/
+backup/boot/efi/EFI/ubuntu/BOOTX64.CSV
+backup/boot/efi/EFI/ubuntu/grub.cfg
+backup/boot/efi/EFI/ubuntu/grubx64.efi
+backup/boot/efi/EFI/ubuntu/mmx64.efi
+backup/boot/efi/EFI/ubuntu/shimx64.efi
+backup/boot/grub/
+backup/boot/grub/gfxblacklist.txt
+backup/boot/grub/grub.cfg
+backup/boot/grub/grubenv
+backup/boot/grub/unicode.pf2
+backup/boot/grub/fonts/
+backup/boot/grub/fonts/unicode.pf2
+backup/boot/grub/i386-pc/
+backup/boot/grub/i386-pc/915resolution.mod
+backup/boot/grub/i386-pc/acpi.mod
+backup/boot/grub/i386-pc/adler32.mod
+backup/boot/grub/i386-pc/affs.mod
+backup/boot/grub/i386-pc/afs.mod
+backup/boot/grub/i386-pc/afsplitter.mod
+backup/boot/grub/i386-pc/ahci.mod
+backup/boot/grub/i386-pc/all_video.mod
+backup/boot/grub/i386-pc/aout.mod
+backup/boot/grub/i386-pc/archelp.mod
+backup/boot/grub/i386-pc/at_keyboard.mod
+backup/boot/grub/i386-pc/ata.mod
+backup/boot/grub/i386-pc/backtrace.mod
+backup/boot/grub/i386-pc/bfs.mod
+backup/boot/grub/i386-pc/biosdisk.mod
+backup/boot/grub/i386-pc/bitmap.mod
+backup/boot/grub/i386-pc/bitmap_scale.mod
+backup/boot/grub/i386-pc/blocklist.mod
+backup/boot/grub/i386-pc/boot.img
+backup/boot/grub/i386-pc/boot.mod
+backup/boot/grub/i386-pc/bsd.mod
+backup/boot/grub/i386-pc/bswap_test.mod
+backup/boot/grub/i386-pc/btrfs.mod
+backup/boot/grub/i386-pc/bufio.mod
+backup/boot/grub/i386-pc/cat.mod
+backup/boot/grub/i386-pc/cbfs.mod
+backup/boot/grub/i386-pc/cbls.mod
+backup/boot/grub/i386-pc/cbmemc.mod
+backup/boot/grub/i386-pc/cbtable.mod
+backup/boot/grub/i386-pc/cbtime.mod
+backup/boot/grub/i386-pc/chain.mod
+backup/boot/grub/i386-pc/cmdline_cat_test.mod
+backup/boot/grub/i386-pc/cmosdump.mod
+backup/boot/grub/i386-pc/cmostest.mod
+backup/boot/grub/i386-pc/cmp.mod
+backup/boot/grub/i386-pc/cmp_test.mod
+backup/boot/grub/i386-pc/command.lst
+backup/boot/grub/i386-pc/configfile.mod
+backup/boot/grub/i386-pc/core.img
+backup/boot/grub/i386-pc/cpio.mod
+backup/boot/grub/i386-pc/cpio_be.mod
+backup/boot/grub/i386-pc/cpuid.mod
+backup/boot/grub/i386-pc/crc64.mod
+backup/boot/grub/i386-pc/crypto.lst
+backup/boot/grub/i386-pc/crypto.mod
+backup/boot/grub/i386-pc/cryptodisk.mod
+backup/boot/grub/i386-pc/cs5536.mod
+backup/boot/grub/i386-pc/ctz_test.mod
+backup/boot/grub/i386-pc/date.mod
+backup/boot/grub/i386-pc/datehook.mod
+backup/boot/grub/i386-pc/datetime.mod
+backup/boot/grub/i386-pc/disk.mod
+backup/boot/grub/i386-pc/diskfilter.mod
+backup/boot/grub/i386-pc/div.mod
+backup/boot/grub/i386-pc/div_test.mod
+backup/boot/grub/i386-pc/dm_nv.mod
+backup/boot/grub/i386-pc/drivemap.mod
+backup/boot/grub/i386-pc/echo.mod
+backup/boot/grub/i386-pc/efiemu.mod
+backup/boot/grub/i386-pc/efiemu32.o
+backup/boot/grub/i386-pc/efiemu64.o
+backup/boot/grub/i386-pc/ehci.mod
+backup/boot/grub/i386-pc/elf.mod
+backup/boot/grub/i386-pc/eval.mod
+backup/boot/grub/i386-pc/exfat.mod
+backup/boot/grub/i386-pc/exfctest.mod
+backup/boot/grub/i386-pc/ext2.mod
+backup/boot/grub/i386-pc/extcmd.mod
+backup/boot/grub/i386-pc/f2fs.mod
+backup/boot/grub/i386-pc/fat.mod
+backup/boot/grub/i386-pc/file.mod
+backup/boot/grub/i386-pc/font.mod
+backup/boot/grub/i386-pc/freedos.mod
+backup/boot/grub/i386-pc/fs.lst
+backup/boot/grub/i386-pc/fshelp.mod
+backup/boot/grub/i386-pc/functional_test.mod
+backup/boot/grub/i386-pc/gcry_arcfour.mod
+backup/boot/grub/i386-pc/gcry_blowfish.mod
+backup/boot/grub/i386-pc/gcry_camellia.mod
+backup/boot/grub/i386-pc/gcry_cast5.mod
+backup/boot/grub/i386-pc/gcry_crc.mod
+backup/boot/grub/i386-pc/gcry_des.mod
+backup/boot/grub/i386-pc/gcry_dsa.mod
+backup/boot/grub/i386-pc/gcry_idea.mod
+backup/boot/grub/i386-pc/gcry_md4.mod
+backup/boot/grub/i386-pc/gcry_md5.mod
+backup/boot/grub/i386-pc/gcry_rfc2268.mod
+backup/boot/grub/i386-pc/gcry_rijndael.mod
+backup/boot/grub/i386-pc/gcry_rmd160.mod
+backup/boot/grub/i386-pc/gcry_rsa.mod
+backup/boot/grub/i386-pc/gcry_seed.mod
+backup/boot/grub/i386-pc/gcry_serpent.mod
+backup/boot/grub/i386-pc/gcry_sha1.mod
+backup/boot/grub/i386-pc/gcry_sha256.mod
+backup/boot/grub/i386-pc/gcry_sha512.mod
+backup/boot/grub/i386-pc/gcry_tiger.mod
+backup/boot/grub/i386-pc/gcry_twofish.mod
+backup/boot/grub/i386-pc/gcry_whirlpool.mod
+backup/boot/grub/i386-pc/gdb.mod
+backup/boot/grub/i386-pc/geli.mod
+backup/boot/grub/i386-pc/gettext.mod
+backup/boot/grub/i386-pc/gfxmenu.mod
+backup/boot/grub/i386-pc/gfxterm.mod
+backup/boot/grub/i386-pc/gfxterm_background.mod
+backup/boot/grub/i386-pc/gfxterm_menu.mod
+backup/boot/grub/i386-pc/gptsync.mod
+backup/boot/grub/i386-pc/gzio.mod
+backup/boot/grub/i386-pc/halt.mod
+backup/boot/grub/i386-pc/hashsum.mod
+backup/boot/grub/i386-pc/hdparm.mod
+backup/boot/grub/i386-pc/hello.mod
+backup/boot/grub/i386-pc/help.mod
+backup/boot/grub/i386-pc/hexdump.mod
+backup/boot/grub/i386-pc/hfs.mod
+backup/boot/grub/i386-pc/hfsplus.mod
+backup/boot/grub/i386-pc/hfspluscomp.mod
+backup/boot/grub/i386-pc/http.mod
+backup/boot/grub/i386-pc/hwmatch.mod
+backup/boot/grub/i386-pc/iorw.mod
+backup/boot/grub/i386-pc/iso9660.mod
+backup/boot/grub/i386-pc/jfs.mod
+backup/boot/grub/i386-pc/jpeg.mod
+backup/boot/grub/i386-pc/json.mod
+backup/boot/grub/i386-pc/keylayouts.mod
+backup/boot/grub/i386-pc/keystatus.mod
+backup/boot/grub/i386-pc/ldm.mod
+backup/boot/grub/i386-pc/legacy_password_test.mod
+backup/boot/grub/i386-pc/legacycfg.mod
+backup/boot/grub/i386-pc/linux.mod
+backup/boot/grub/i386-pc/linux16.mod
+backup/boot/grub/i386-pc/loadenv.mod
+backup/boot/grub/i386-pc/loopback.mod
+backup/boot/grub/i386-pc/ls.mod
+backup/boot/grub/i386-pc/lsacpi.mod
+backup/boot/grub/i386-pc/lsapm.mod
+backup/boot/grub/i386-pc/lsmmap.mod
+backup/boot/grub/i386-pc/lspci.mod
+backup/boot/grub/i386-pc/luks.mod
+backup/boot/grub/i386-pc/luks2.mod
+backup/boot/grub/i386-pc/lvm.mod
+backup/boot/grub/i386-pc/lzopio.mod
+backup/boot/grub/i386-pc/macbless.mod
+backup/boot/grub/i386-pc/macho.mod
+backup/boot/grub/i386-pc/mda_text.mod
+backup/boot/grub/i386-pc/mdraid09.mod
+backup/boot/grub/i386-pc/mdraid09_be.mod
+backup/boot/grub/i386-pc/mdraid1x.mod
+backup/boot/grub/i386-pc/memdisk.mod
+backup/boot/grub/i386-pc/memrw.mod
+backup/boot/grub/i386-pc/minicmd.mod
+backup/boot/grub/i386-pc/minix.mod
+backup/boot/grub/i386-pc/minix2.mod
+backup/boot/grub/i386-pc/minix2_be.mod
+backup/boot/grub/i386-pc/minix3.mod
+backup/boot/grub/i386-pc/minix3_be.mod
+backup/boot/grub/i386-pc/minix_be.mod
+backup/boot/grub/i386-pc/mmap.mod
+backup/boot/grub/i386-pc/moddep.lst
+backup/boot/grub/i386-pc/modinfo.sh
+backup/boot/grub/i386-pc/morse.mod
+backup/boot/grub/i386-pc/mpi.mod
+backup/boot/grub/i386-pc/msdospart.mod
+backup/boot/grub/i386-pc/mul_test.mod
+backup/boot/grub/i386-pc/multiboot.mod
+backup/boot/grub/i386-pc/multiboot2.mod
+backup/boot/grub/i386-pc/nativedisk.mod
+backup/boot/grub/i386-pc/net.mod
+backup/boot/grub/i386-pc/newc.mod
+backup/boot/grub/i386-pc/nilfs2.mod
+backup/boot/grub/i386-pc/normal.mod
+backup/boot/grub/i386-pc/ntfs.mod
+backup/boot/grub/i386-pc/ntfscomp.mod
+backup/boot/grub/i386-pc/ntldr.mod
+backup/boot/grub/i386-pc/odc.mod
+backup/boot/grub/i386-pc/offsetio.mod
+backup/boot/grub/i386-pc/ohci.mod
+backup/boot/grub/i386-pc/part_acorn.mod
+backup/boot/grub/i386-pc/part_amiga.mod
+backup/boot/grub/i386-pc/part_apple.mod
+backup/boot/grub/i386-pc/part_bsd.mod
+backup/boot/grub/i386-pc/part_dfly.mod
+backup/boot/grub/i386-pc/part_dvh.mod
+backup/boot/grub/i386-pc/part_gpt.mod
+backup/boot/grub/i386-pc/part_msdos.mod
+backup/boot/grub/i386-pc/part_plan.mod
+backup/boot/grub/i386-pc/part_sun.mod
+backup/boot/grub/i386-pc/part_sunpc.mod
+backup/boot/grub/i386-pc/partmap.lst
+backup/boot/grub/i386-pc/parttool.lst
+backup/boot/grub/i386-pc/parttool.mod
+backup/boot/grub/i386-pc/password.mod
+backup/boot/grub/i386-pc/password_pbkdf2.mod
+backup/boot/grub/i386-pc/pata.mod
+backup/boot/grub/i386-pc/pbkdf2.mod
+backup/boot/grub/i386-pc/pbkdf2_test.mod
+backup/boot/grub/i386-pc/pci.mod
+backup/boot/grub/i386-pc/pcidump.mod
+backup/boot/grub/i386-pc/pgp.mod
+backup/boot/grub/i386-pc/plan9.mod
+backup/boot/grub/i386-pc/play.mod
+backup/boot/grub/i386-pc/png.mod
+backup/boot/grub/i386-pc/priority_queue.mod
+backup/boot/grub/i386-pc/probe.mod
+backup/boot/grub/i386-pc/procfs.mod
+backup/boot/grub/i386-pc/progress.mod
+backup/boot/grub/i386-pc/pxe.mod
+backup/boot/grub/i386-pc/pxechain.mod
+backup/boot/grub/i386-pc/raid5rec.mod
+backup/boot/grub/i386-pc/raid6rec.mod
+backup/boot/grub/i386-pc/random.mod
+backup/boot/grub/i386-pc/rdmsr.mod
+backup/boot/grub/i386-pc/read.mod
+backup/boot/grub/i386-pc/reboot.mod
+backup/boot/grub/i386-pc/regexp.mod
+backup/boot/grub/i386-pc/reiserfs.mod
+backup/boot/grub/i386-pc/relocator.mod
+backup/boot/grub/i386-pc/romfs.mod
+backup/boot/grub/i386-pc/scsi.mod
+backup/boot/grub/i386-pc/search.mod
+backup/boot/grub/i386-pc/search_fs_file.mod
+backup/boot/grub/i386-pc/search_fs_uuid.mod
+backup/boot/grub/i386-pc/search_label.mod
+backup/boot/grub/i386-pc/sendkey.mod
+backup/boot/grub/i386-pc/serial.mod
+backup/boot/grub/i386-pc/setjmp.mod
+backup/boot/grub/i386-pc/setjmp_test.mod
+backup/boot/grub/i386-pc/setpci.mod
+backup/boot/grub/i386-pc/sfs.mod
+backup/boot/grub/i386-pc/shift_test.mod
+backup/boot/grub/i386-pc/signature_test.mod
+backup/boot/grub/i386-pc/sleep.mod
+backup/boot/grub/i386-pc/sleep_test.mod
+backup/boot/grub/i386-pc/smbios.mod
+backup/boot/grub/i386-pc/spkmodem.mod
+backup/boot/grub/i386-pc/squash4.mod
+backup/boot/grub/i386-pc/strtoull_test.mod
+backup/boot/grub/i386-pc/syslinuxcfg.mod
+backup/boot/grub/i386-pc/tar.mod
+backup/boot/grub/i386-pc/terminal.lst
+backup/boot/grub/i386-pc/terminal.mod
+backup/boot/grub/i386-pc/terminfo.mod
+backup/boot/grub/i386-pc/test.mod
+backup/boot/grub/i386-pc/test_blockarg.mod
+backup/boot/grub/i386-pc/testload.mod
+backup/boot/grub/i386-pc/testspeed.mod
+backup/boot/grub/i386-pc/tftp.mod
+backup/boot/grub/i386-pc/tga.mod
+backup/boot/grub/i386-pc/time.mod
+backup/boot/grub/i386-pc/tr.mod
+backup/boot/grub/i386-pc/trig.mod
+backup/boot/grub/i386-pc/true.mod
+backup/boot/grub/i386-pc/truecrypt.mod
+backup/boot/grub/i386-pc/udf.mod
+backup/boot/grub/i386-pc/ufs1.mod
+backup/boot/grub/i386-pc/ufs1_be.mod
+backup/boot/grub/i386-pc/ufs2.mod
+backup/boot/grub/i386-pc/uhci.mod
+backup/boot/grub/i386-pc/usb.mod
+backup/boot/grub/i386-pc/usb_keyboard.mod
+backup/boot/grub/i386-pc/usbms.mod
+backup/boot/grub/i386-pc/usbserial_common.mod
+backup/boot/grub/i386-pc/usbserial_ftdi.mod
+backup/boot/grub/i386-pc/usbserial_pl2303.mod
+backup/boot/grub/i386-pc/usbserial_usbdebug.mod
+backup/boot/grub/i386-pc/usbtest.mod
+backup/boot/grub/i386-pc/vbe.mod
+backup/boot/grub/i386-pc/verifiers.mod
+backup/boot/grub/i386-pc/vga.mod
+backup/boot/grub/i386-pc/vga_text.mod
+backup/boot/grub/i386-pc/video.lst
+backup/boot/grub/i386-pc/video.mod
+backup/boot/grub/i386-pc/video_bochs.mod
+backup/boot/grub/i386-pc/video_cirrus.mod
+backup/boot/grub/i386-pc/video_colors.mod
+backup/boot/grub/i386-pc/video_fb.mod
+backup/boot/grub/i386-pc/videoinfo.mod
+backup/boot/grub/i386-pc/videotest.mod
+backup/boot/grub/i386-pc/videotest_checksum.mod
+backup/boot/grub/i386-pc/wrmsr.mod
+backup/boot/grub/i386-pc/xfs.mod
+backup/boot/grub/i386-pc/xnu.mod
+backup/boot/grub/i386-pc/xnu_uuid.mod
+backup/boot/grub/i386-pc/xnu_uuid_test.mod
+backup/boot/grub/i386-pc/xzio.mod
+backup/boot/grub/i386-pc/zfs.mod
+backup/boot/grub/i386-pc/zfscrypt.mod
+backup/boot/grub/i386-pc/zfsinfo.mod
+backup/boot/grub/i386-pc/zstd.mod
+backup/boot/grub/locale/
+backup/boot/grub/x86_64-efi/
+backup/boot/grub/x86_64-efi/acpi.mod
+backup/boot/grub/x86_64-efi/adler32.mod
+backup/boot/grub/x86_64-efi/affs.mod
+backup/boot/grub/x86_64-efi/afs.mod
+backup/boot/grub/x86_64-efi/afsplitter.mod
+backup/boot/grub/x86_64-efi/ahci.mod
+backup/boot/grub/x86_64-efi/all_video.mod
+backup/boot/grub/x86_64-efi/aout.mod
+backup/boot/grub/x86_64-efi/appleldr.mod
+backup/boot/grub/x86_64-efi/archelp.mod
+backup/boot/grub/x86_64-efi/at_keyboard.mod
+backup/boot/grub/x86_64-efi/ata.mod
+backup/boot/grub/x86_64-efi/backtrace.mod
+backup/boot/grub/x86_64-efi/bfs.mod
+backup/boot/grub/x86_64-efi/bitmap.mod
+backup/boot/grub/x86_64-efi/bitmap_scale.mod
+backup/boot/grub/x86_64-efi/blocklist.mod
+backup/boot/grub/x86_64-efi/boot.mod
+backup/boot/grub/x86_64-efi/bsd.mod
+backup/boot/grub/x86_64-efi/bswap_test.mod
+backup/boot/grub/x86_64-efi/btrfs.mod
+backup/boot/grub/x86_64-efi/bufio.mod
+backup/boot/grub/x86_64-efi/cat.mod
+backup/boot/grub/x86_64-efi/cbfs.mod
+backup/boot/grub/x86_64-efi/cbls.mod
+backup/boot/grub/x86_64-efi/cbmemc.mod
+backup/boot/grub/x86_64-efi/cbtable.mod
+backup/boot/grub/x86_64-efi/cbtime.mod
+backup/boot/grub/x86_64-efi/chain.mod
+backup/boot/grub/x86_64-efi/cmdline_cat_test.mod
+backup/boot/grub/x86_64-efi/cmp.mod
+backup/boot/grub/x86_64-efi/cmp_test.mod
+backup/boot/grub/x86_64-efi/command.lst
+backup/boot/grub/x86_64-efi/configfile.mod
+backup/boot/grub/x86_64-efi/core.efi
+backup/boot/grub/x86_64-efi/cpio.mod
+backup/boot/grub/x86_64-efi/cpio_be.mod
+backup/boot/grub/x86_64-efi/cpuid.mod
+backup/boot/grub/x86_64-efi/crc64.mod
+backup/boot/grub/x86_64-efi/crypto.lst
+backup/boot/grub/x86_64-efi/crypto.mod
+backup/boot/grub/x86_64-efi/cryptodisk.mod
+backup/boot/grub/x86_64-efi/cs5536.mod
+backup/boot/grub/x86_64-efi/ctz_test.mod
+backup/boot/grub/x86_64-efi/date.mod
+backup/boot/grub/x86_64-efi/datehook.mod
+backup/boot/grub/x86_64-efi/datetime.mod
+backup/boot/grub/x86_64-efi/disk.mod
+backup/boot/grub/x86_64-efi/diskfilter.mod
+backup/boot/grub/x86_64-efi/div.mod
+backup/boot/grub/x86_64-efi/div_test.mod
+backup/boot/grub/x86_64-efi/dm_nv.mod
+backup/boot/grub/x86_64-efi/echo.mod
+backup/boot/grub/x86_64-efi/efi_gop.mod
+backup/boot/grub/x86_64-efi/efi_uga.mod
+backup/boot/grub/x86_64-efi/efifwsetup.mod
+backup/boot/grub/x86_64-efi/efinet.mod
+backup/boot/grub/x86_64-efi/ehci.mod
+backup/boot/grub/x86_64-efi/elf.mod
+backup/boot/grub/x86_64-efi/eval.mod
+backup/boot/grub/x86_64-efi/exfat.mod
+backup/boot/grub/x86_64-efi/exfctest.mod
+backup/boot/grub/x86_64-efi/ext2.mod
+backup/boot/grub/x86_64-efi/extcmd.mod
+backup/boot/grub/x86_64-efi/f2fs.mod
+backup/boot/grub/x86_64-efi/fat.mod
+backup/boot/grub/x86_64-efi/file.mod
+backup/boot/grub/x86_64-efi/fixvideo.mod
+backup/boot/grub/x86_64-efi/font.mod
+backup/boot/grub/x86_64-efi/fs.lst
+backup/boot/grub/x86_64-efi/fshelp.mod
+backup/boot/grub/x86_64-efi/functional_test.mod
+backup/boot/grub/x86_64-efi/gcry_arcfour.mod
+backup/boot/grub/x86_64-efi/gcry_blowfish.mod
+backup/boot/grub/x86_64-efi/gcry_camellia.mod
+backup/boot/grub/x86_64-efi/gcry_cast5.mod
+backup/boot/grub/x86_64-efi/gcry_crc.mod
+backup/boot/grub/x86_64-efi/gcry_des.mod
+backup/boot/grub/x86_64-efi/gcry_dsa.mod
+backup/boot/grub/x86_64-efi/gcry_idea.mod
+backup/boot/grub/x86_64-efi/gcry_md4.mod
+backup/boot/grub/x86_64-efi/gcry_md5.mod
+backup/boot/grub/x86_64-efi/gcry_rfc2268.mod
+backup/boot/grub/x86_64-efi/gcry_rijndael.mod
+backup/boot/grub/x86_64-efi/gcry_rmd160.mod
+backup/boot/grub/x86_64-efi/gcry_rsa.mod
+backup/boot/grub/x86_64-efi/gcry_seed.mod
+backup/boot/grub/x86_64-efi/gcry_serpent.mod
+backup/boot/grub/x86_64-efi/gcry_sha1.mod
+backup/boot/grub/x86_64-efi/gcry_sha256.mod
+backup/boot/grub/x86_64-efi/gcry_sha512.mod
+backup/boot/grub/x86_64-efi/gcry_tiger.mod
+backup/boot/grub/x86_64-efi/gcry_twofish.mod
+backup/boot/grub/x86_64-efi/gcry_whirlpool.mod
+backup/boot/grub/x86_64-efi/geli.mod
+backup/boot/grub/x86_64-efi/gettext.mod
+backup/boot/grub/x86_64-efi/gfxmenu.mod
+backup/boot/grub/x86_64-efi/gfxterm.mod
+backup/boot/grub/x86_64-efi/gfxterm_background.mod
+backup/boot/grub/x86_64-efi/gfxterm_menu.mod
+backup/boot/grub/x86_64-efi/gptsync.mod
+backup/boot/grub/x86_64-efi/grub.efi
+backup/boot/grub/x86_64-efi/gzio.mod
+backup/boot/grub/x86_64-efi/halt.mod
+backup/boot/grub/x86_64-efi/hashsum.mod
+backup/boot/grub/x86_64-efi/hdparm.mod
+backup/boot/grub/x86_64-efi/hello.mod
+backup/boot/grub/x86_64-efi/help.mod
+backup/boot/grub/x86_64-efi/hexdump.mod
+backup/boot/grub/x86_64-efi/hfs.mod
+backup/boot/grub/x86_64-efi/hfsplus.mod
+backup/boot/grub/x86_64-efi/hfspluscomp.mod
+backup/boot/grub/x86_64-efi/http.mod
+backup/boot/grub/x86_64-efi/iorw.mod
+backup/boot/grub/x86_64-efi/iso9660.mod
+backup/boot/grub/x86_64-efi/jfs.mod
+backup/boot/grub/x86_64-efi/jpeg.mod
+backup/boot/grub/x86_64-efi/json.mod
+backup/boot/grub/x86_64-efi/keylayouts.mod
+backup/boot/grub/x86_64-efi/keystatus.mod
+backup/boot/grub/x86_64-efi/ldm.mod
+backup/boot/grub/x86_64-efi/legacy_password_test.mod
+backup/boot/grub/x86_64-efi/legacycfg.mod
+backup/boot/grub/x86_64-efi/linux.mod
+backup/boot/grub/x86_64-efi/linux16.mod
+backup/boot/grub/x86_64-efi/linuxefi.mod
+backup/boot/grub/x86_64-efi/load.cfg
+backup/boot/grub/x86_64-efi/loadbios.mod
+backup/boot/grub/x86_64-efi/loadenv.mod
+backup/boot/grub/x86_64-efi/loopback.mod
+backup/boot/grub/x86_64-efi/ls.mod
+backup/boot/grub/x86_64-efi/lsacpi.mod
+backup/boot/grub/x86_64-efi/lsefi.mod
+backup/boot/grub/x86_64-efi/lsefimmap.mod
+backup/boot/grub/x86_64-efi/lsefisystab.mod
+backup/boot/grub/x86_64-efi/lsmmap.mod
+backup/boot/grub/x86_64-efi/lspci.mod
+backup/boot/grub/x86_64-efi/lssal.mod
+backup/boot/grub/x86_64-efi/luks.mod
+backup/boot/grub/x86_64-efi/luks2.mod
+backup/boot/grub/x86_64-efi/lvm.mod
+backup/boot/grub/x86_64-efi/lzopio.mod
+backup/boot/grub/x86_64-efi/macbless.mod
+backup/boot/grub/x86_64-efi/macho.mod
+backup/boot/grub/x86_64-efi/mdraid09.mod
+backup/boot/grub/x86_64-efi/mdraid09_be.mod
+backup/boot/grub/x86_64-efi/mdraid1x.mod
+backup/boot/grub/x86_64-efi/memdisk.mod
+backup/boot/grub/x86_64-efi/memrw.mod
+backup/boot/grub/x86_64-efi/minicmd.mod
+backup/boot/grub/x86_64-efi/minix.mod
+backup/boot/grub/x86_64-efi/minix2.mod
+backup/boot/grub/x86_64-efi/minix2_be.mod
+backup/boot/grub/x86_64-efi/minix3.mod
+backup/boot/grub/x86_64-efi/minix3_be.mod
+backup/boot/grub/x86_64-efi/minix_be.mod
+backup/boot/grub/x86_64-efi/mmap.mod
+backup/boot/grub/x86_64-efi/moddep.lst
+backup/boot/grub/x86_64-efi/modinfo.sh
+backup/boot/grub/x86_64-efi/morse.mod
+backup/boot/grub/x86_64-efi/mpi.mod
+backup/boot/grub/x86_64-efi/msdospart.mod
+backup/boot/grub/x86_64-efi/mul_test.mod
+backup/boot/grub/x86_64-efi/multiboot.mod
+backup/boot/grub/x86_64-efi/multiboot2.mod
+backup/boot/grub/x86_64-efi/nativedisk.mod
+backup/boot/grub/x86_64-efi/net.mod
+backup/boot/grub/x86_64-efi/newc.mod
+backup/boot/grub/x86_64-efi/nilfs2.mod
+backup/boot/grub/x86_64-efi/normal.mod
+backup/boot/grub/x86_64-efi/ntfs.mod
+backup/boot/grub/x86_64-efi/ntfscomp.mod
+backup/boot/grub/x86_64-efi/odc.mod
+backup/boot/grub/x86_64-efi/offsetio.mod
+backup/boot/grub/x86_64-efi/ohci.mod
+backup/boot/grub/x86_64-efi/part_acorn.mod
+backup/boot/grub/x86_64-efi/part_amiga.mod
+backup/boot/grub/x86_64-efi/part_apple.mod
+backup/boot/grub/x86_64-efi/part_bsd.mod
+backup/boot/grub/x86_64-efi/part_dfly.mod
+backup/boot/grub/x86_64-efi/part_dvh.mod
+backup/boot/grub/x86_64-efi/part_gpt.mod
+backup/boot/grub/x86_64-efi/part_msdos.mod
+backup/boot/grub/x86_64-efi/part_plan.mod
+backup/boot/grub/x86_64-efi/part_sun.mod
+backup/boot/grub/x86_64-efi/part_sunpc.mod
+backup/boot/grub/x86_64-efi/partmap.lst
+backup/boot/grub/x86_64-efi/parttool.lst
+backup/boot/grub/x86_64-efi/parttool.mod
+backup/boot/grub/x86_64-efi/password.mod
+backup/boot/grub/x86_64-efi/password_pbkdf2.mod
+backup/boot/grub/x86_64-efi/pata.mod
+backup/boot/grub/x86_64-efi/pbkdf2.mod
+backup/boot/grub/x86_64-efi/pbkdf2_test.mod
+backup/boot/grub/x86_64-efi/pcidump.mod
+backup/boot/grub/x86_64-efi/pgp.mod
+backup/boot/grub/x86_64-efi/play.mod
+backup/boot/grub/x86_64-efi/png.mod
+backup/boot/grub/x86_64-efi/priority_queue.mod
+backup/boot/grub/x86_64-efi/probe.mod
+backup/boot/grub/x86_64-efi/procfs.mod
+backup/boot/grub/x86_64-efi/progress.mod
+backup/boot/grub/x86_64-efi/raid5rec.mod
+backup/boot/grub/x86_64-efi/raid6rec.mod
+backup/boot/grub/x86_64-efi/random.mod
+backup/boot/grub/x86_64-efi/rdmsr.mod
+backup/boot/grub/x86_64-efi/read.mod
+backup/boot/grub/x86_64-efi/reboot.mod
+backup/boot/grub/x86_64-efi/regexp.mod
+backup/boot/grub/x86_64-efi/reiserfs.mod
+backup/boot/grub/x86_64-efi/relocator.mod
+backup/boot/grub/x86_64-efi/romfs.mod
+backup/boot/grub/x86_64-efi/scsi.mod
+backup/boot/grub/x86_64-efi/search.mod
+backup/boot/grub/x86_64-efi/search_fs_file.mod
+backup/boot/grub/x86_64-efi/search_fs_uuid.mod
+backup/boot/grub/x86_64-efi/search_label.mod
+backup/boot/grub/x86_64-efi/serial.mod
+backup/boot/grub/x86_64-efi/setjmp.mod
+backup/boot/grub/x86_64-efi/setjmp_test.mod
+backup/boot/grub/x86_64-efi/setpci.mod
+backup/boot/grub/x86_64-efi/sfs.mod
+backup/boot/grub/x86_64-efi/shift_test.mod
+backup/boot/grub/x86_64-efi/signature_test.mod
+backup/boot/grub/x86_64-efi/sleep.mod
+backup/boot/grub/x86_64-efi/sleep_test.mod
+backup/boot/grub/x86_64-efi/smbios.mod
+backup/boot/grub/x86_64-efi/spkmodem.mod
+backup/boot/grub/x86_64-efi/squash4.mod
+backup/boot/grub/x86_64-efi/strtoull_test.mod
+backup/boot/grub/x86_64-efi/syslinuxcfg.mod
+backup/boot/grub/x86_64-efi/tar.mod
+backup/boot/grub/x86_64-efi/terminal.lst
+backup/boot/grub/x86_64-efi/terminal.mod
+backup/boot/grub/x86_64-efi/terminfo.mod
+backup/boot/grub/x86_64-efi/test.mod
+backup/boot/grub/x86_64-efi/test_blockarg.mod
+backup/boot/grub/x86_64-efi/testload.mod
+backup/boot/grub/x86_64-efi/testspeed.mod
+backup/boot/grub/x86_64-efi/tftp.mod
+backup/boot/grub/x86_64-efi/tga.mod
+backup/boot/grub/x86_64-efi/time.mod
+backup/boot/grub/x86_64-efi/tpm.mod
+backup/boot/grub/x86_64-efi/tr.mod
+backup/boot/grub/x86_64-efi/trig.mod
+backup/boot/grub/x86_64-efi/true.mod
+backup/boot/grub/x86_64-efi/udf.mod
+backup/boot/grub/x86_64-efi/ufs1.mod
+backup/boot/grub/x86_64-efi/ufs1_be.mod
+backup/boot/grub/x86_64-efi/ufs2.mod
+backup/boot/grub/x86_64-efi/uhci.mod
+backup/boot/grub/x86_64-efi/usb.mod
+backup/boot/grub/x86_64-efi/usb_keyboard.mod
+backup/boot/grub/x86_64-efi/usbms.mod
+backup/boot/grub/x86_64-efi/usbserial_common.mod
+backup/boot/grub/x86_64-efi/usbserial_ftdi.mod
+backup/boot/grub/x86_64-efi/usbserial_pl2303.mod
+backup/boot/grub/x86_64-efi/usbserial_usbdebug.mod
+backup/boot/grub/x86_64-efi/usbtest.mod
+backup/boot/grub/x86_64-efi/video.lst
+backup/boot/grub/x86_64-efi/video.mod
+backup/boot/grub/x86_64-efi/video_bochs.mod
+backup/boot/grub/x86_64-efi/video_cirrus.mod
+backup/boot/grub/x86_64-efi/video_colors.mod
+backup/boot/grub/x86_64-efi/video_fb.mod
+backup/boot/grub/x86_64-efi/videoinfo.mod
+backup/boot/grub/x86_64-efi/videotest.mod
+backup/boot/grub/x86_64-efi/videotest_checksum.mod
+backup/boot/grub/x86_64-efi/wrmsr.mod
+backup/boot/grub/x86_64-efi/xfs.mod
+backup/boot/grub/x86_64-efi/xnu.mod
+backup/boot/grub/x86_64-efi/xnu_uuid.mod
+backup/boot/grub/x86_64-efi/xnu_uuid_test.mod
+backup/boot/grub/x86_64-efi/xzio.mod
+backup/boot/grub/x86_64-efi/zfs.mod
+backup/boot/grub/x86_64-efi/zfscrypt.mod
+backup/boot/grub/x86_64-efi/zfsinfo.mod
+backup/boot/grub/x86_64-efi/zstd.mod
+backup/etc/
+backup/etc/.pwd.lock
+backup/etc/adduser.conf
+backup/etc/bash.bashrc
+backup/etc/bash_completion
+backup/etc/bindresvport.blacklist
+backup/etc/ca-certificates.conf
+backup/etc/ca-certificates.conf.dpkg-old
+backup/etc/crontab
+backup/etc/crypttab
+backup/etc/debconf.conf
+backup/etc/debian_version
+backup/etc/deluser.conf
+backup/etc/e2scrub.conf
+backup/etc/ec2_version
+backup/etc/environment
+backup/etc/ethertypes
+backup/etc/fstab
+backup/etc/ftpusers
+backup/etc/fuse.conf
+backup/etc/gai.conf
+backup/etc/group
+backup/etc/group-
+backup/etc/gshadow
+backup/etc/gshadow-
+backup/etc/hdparm.conf
+backup/etc/host.conf
+backup/etc/hostname
+backup/etc/hosts
+backup/etc/hosts.allow
+backup/etc/hosts.deny
+backup/etc/inputrc
+backup/etc/issue
+backup/etc/issue.net
+backup/etc/kernel-img.conf
+backup/etc/ld.so.cache
+backup/etc/ld.so.conf
+backup/etc/legal
+backup/etc/libaudit.conf
+backup/etc/locale.alias
+backup/etc/locale.gen
+backup/etc/localtime -> /usr/share/zoneinfo/Etc/UTC
+backup/etc/login.defs
+backup/etc/logrotate.conf
+backup/etc/lsb-release
+backup/etc/machine-id
+backup/etc/magic
+backup/etc/magic.mime
+backup/etc/mailcap
+backup/etc/mailcap.order
+backup/etc/manpath.config
+backup/etc/mecabrc
+backup/etc/mime.types
+backup/etc/mke2fs.conf
+backup/etc/modules
+backup/etc/mtab -> ../proc/self/mounts
+backup/etc/multipath.conf
+backup/etc/nanorc
+backup/etc/netconfig
+backup/etc/networks
+backup/etc/nftables.conf
+backup/etc/nsswitch.conf
+backup/etc/os-release -> ../usr/lib/os-release
+backup/etc/overlayroot.conf
+backup/etc/overlayroot.local.conf
+backup/etc/pam.conf
+backup/etc/passwd
+backup/etc/passwd-
+backup/etc/profile
+backup/etc/protocols
+backup/etc/resolv.conf -> ../run/systemd/resolve/stub-resolv.conf
+backup/etc/rmt -> /usr/sbin/rmt
+backup/etc/rpc
+backup/etc/rsyslog.conf
+backup/etc/screenrc
+backup/etc/sensors3.conf
+backup/etc/services
+backup/etc/shadow
+backup/etc/shadow-
+backup/etc/shells
+backup/etc/subgid
+backup/etc/subgid-
+backup/etc/subuid
+backup/etc/subuid-
+backup/etc/sudo.conf
+backup/etc/sudo_logsrvd.conf
+backup/etc/sudoers
+backup/etc/sysctl.conf
+backup/etc/timezone
+backup/etc/ucf.conf
+backup/etc/usb_modeswitch.conf
+backup/etc/vsftpd.conf
+backup/etc/vsftpd.conf.backup
+backup/etc/vsftpd.userlist
+backup/etc/vtrgb -> /etc/alternatives/vtrgb
+backup/etc/wgetrc
+backup/etc/xattr.conf
+backup/etc/zsh_command_not_found
+backup/etc/NetworkManager/
+backup/etc/NetworkManager/dispatcher.d/
+backup/etc/NetworkManager/dispatcher.d/hook-network-manager
+backup/etc/PackageKit/
+backup/etc/PackageKit/PackageKit.conf
+backup/etc/PackageKit/Vendor.conf
+backup/etc/X11/
+backup/etc/X11/Xreset
+backup/etc/X11/Xsession
+backup/etc/X11/Xsession.options
+backup/etc/X11/rgb.txt
+backup/etc/X11/Xreset.d/
+backup/etc/X11/Xreset.d/README
+backup/etc/X11/Xresources/
+backup/etc/X11/Xresources/x11-common
+backup/etc/X11/Xsession.d/
+backup/etc/X11/Xsession.d/20dbus_xdg-runtime
+backup/etc/X11/Xsession.d/20x11-common_process-args
+backup/etc/X11/Xsession.d/30x11-common_xresources
+backup/etc/X11/Xsession.d/35x11-common_xhost-local
+backup/etc/X11/Xsession.d/40x11-common_xsessionrc
+backup/etc/X11/Xsession.d/50x11-common_determine-startup
+backup/etc/X11/Xsession.d/60x11-common_xdg_path
+backup/etc/X11/Xsession.d/90gpg-agent
+backup/etc/X11/Xsession.d/90qt-a11y
+backup/etc/X11/Xsession.d/90x11-common_ssh-agent
+backup/etc/X11/Xsession.d/99x11-common_start
+backup/etc/X11/app-defaults/
+backup/etc/X11/app-defaults/Editres
+backup/etc/X11/app-defaults/Editres-color
+backup/etc/X11/app-defaults/Viewres
+backup/etc/X11/app-defaults/Viewres-color
+backup/etc/X11/app-defaults/XFontSel
+backup/etc/X11/app-defaults/Xfd
+backup/etc/X11/app-defaults/Xmessage
+backup/etc/X11/app-defaults/Xmessage-color
+backup/etc/X11/app-defaults/Xvidtune
+backup/etc/X11/xkb/
+backup/etc/X11/xorg.conf.d/
+backup/etc/alternatives/
+backup/etc/alternatives/README
+backup/etc/alternatives/arptables -> /usr/sbin/arptables-nft
+backup/etc/alternatives/arptables-restore -> /usr/sbin/arptables-nft-restore
+backup/etc/alternatives/arptables-save -> /usr/sbin/arptables-nft-save
+backup/etc/alternatives/awk -> /usr/bin/gawk
+backup/etc/alternatives/awk.1.gz -> /usr/share/man/man1/gawk.1.gz
+backup/etc/alternatives/builtins.7.gz -> /usr/share/man/man7/bash-builtins.7.gz
+backup/etc/alternatives/c++ -> /usr/bin/g++
+backup/etc/alternatives/c++.1.gz -> /usr/share/man/man1/g++.1.gz
+backup/etc/alternatives/c89 -> /usr/bin/c89-gcc
+backup/etc/alternatives/c89.1.gz -> /usr/share/man/man1/c89-gcc.1.gz
+backup/etc/alternatives/c99 -> /usr/bin/c99-gcc
+backup/etc/alternatives/c99.1.gz -> /usr/share/man/man1/c99-gcc.1.gz
+backup/etc/alternatives/cc -> /usr/bin/gcc
+backup/etc/alternatives/cc.1.gz -> /usr/share/man/man1/gcc.1.gz
+backup/etc/alternatives/cpp -> /usr/bin/cpp
+backup/etc/alternatives/ebtables -> /usr/sbin/ebtables-nft
+backup/etc/alternatives/ebtables-restore -> /usr/sbin/ebtables-nft-restore
+backup/etc/alternatives/ebtables-save -> /usr/sbin/ebtables-nft-save
+backup/etc/alternatives/editor -> /bin/nano
+backup/etc/alternatives/editor.1.gz -> /usr/share/man/man1/nano.1.gz
+backup/etc/alternatives/ex -> /usr/bin/vim.basic
+backup/etc/alternatives/ex.1.gz -> /usr/share/man/man1/vim.1.gz
+backup/etc/alternatives/ex.da.1.gz -> /usr/share/man/da/man1/vim.1.gz
+backup/etc/alternatives/ex.de.1.gz -> /usr/share/man/de/man1/vim.1.gz
+backup/etc/alternatives/ex.fr.1.gz -> /usr/share/man/fr/man1/vim.1.gz
+backup/etc/alternatives/ex.it.1.gz -> /usr/share/man/it/man1/vim.1.gz
+backup/etc/alternatives/ex.ja.1.gz -> /usr/share/man/ja/man1/vim.1.gz
+backup/etc/alternatives/ex.pl.1.gz -> /usr/share/man/pl/man1/vim.1.gz
+backup/etc/alternatives/ex.ru.1.gz -> /usr/share/man/ru/man1/vim.1.gz
+backup/etc/alternatives/faked.1.gz -> /usr/share/man/man1/faked-sysv.1.gz
+backup/etc/alternatives/faked.es.1.gz -> /usr/share/man/es/man1/faked-sysv.1.gz
+backup/etc/alternatives/faked.fr.1.gz -> /usr/share/man/fr/man1/faked-sysv.1.gz
+backup/etc/alternatives/faked.sv.1.gz -> /usr/share/man/sv/man1/faked-sysv.1.gz
+backup/etc/alternatives/fakeroot -> /usr/bin/fakeroot-sysv
+backup/etc/alternatives/fakeroot.1.gz -> /usr/share/man/man1/fakeroot-sysv.1.gz
+backup/etc/alternatives/fakeroot.es.1.gz -> /usr/share/man/es/man1/fakeroot-sysv.1.gz
+backup/etc/alternatives/fakeroot.fr.1.gz -> /usr/share/man/fr/man1/fakeroot-sysv.1.gz
+backup/etc/alternatives/fakeroot.sv.1.gz -> /usr/share/man/sv/man1/fakeroot-sysv.1.gz
+backup/etc/alternatives/ftp -> /usr/bin/tnftp
+backup/etc/alternatives/ftp.1.gz -> /usr/share/man/man1/tnftp.1.gz
+backup/etc/alternatives/infobrowser -> /usr/bin/info
+backup/etc/alternatives/infobrowser.1.gz -> /usr/share/man/man1/info.1.gz
+backup/etc/alternatives/ip6tables -> /usr/sbin/ip6tables-nft
+backup/etc/alternatives/ip6tables-restore -> /usr/sbin/ip6tables-nft-restore
+backup/etc/alternatives/ip6tables-save -> /usr/sbin/ip6tables-nft-save
+backup/etc/alternatives/iptables -> /usr/sbin/iptables-nft
+backup/etc/alternatives/iptables-restore -> /usr/sbin/iptables-nft-restore
+backup/etc/alternatives/iptables-save -> /usr/sbin/iptables-nft-save
+backup/etc/alternatives/js -> /usr/bin/nodejs
+backup/etc/alternatives/js.1.gz -> /usr/share/man/man1/nodejs.1.gz
+backup/etc/alternatives/jsondiff -> /usr/bin/json-patch-jsondiff
+backup/etc/alternatives/lzcat -> /usr/bin/xzcat
+backup/etc/alternatives/lzcat.1.gz -> /usr/share/man/man1/xzcat.1.gz
+backup/etc/alternatives/lzcmp -> /usr/bin/xzcmp
+backup/etc/alternatives/lzcmp.1.gz -> /usr/share/man/man1/xzcmp.1.gz
+backup/etc/alternatives/lzdiff -> /usr/bin/xzdiff
+backup/etc/alternatives/lzdiff.1.gz -> /usr/share/man/man1/xzdiff.1.gz
+backup/etc/alternatives/lzegrep -> /usr/bin/xzegrep
+backup/etc/alternatives/lzegrep.1.gz -> /usr/share/man/man1/xzegrep.1.gz
+backup/etc/alternatives/lzfgrep -> /usr/bin/xzfgrep
+backup/etc/alternatives/lzfgrep.1.gz -> /usr/share/man/man1/xzfgrep.1.gz
+backup/etc/alternatives/lzgrep -> /usr/bin/xzgrep
+backup/etc/alternatives/lzgrep.1.gz -> /usr/share/man/man1/xzgrep.1.gz
+backup/etc/alternatives/lzless -> /usr/bin/xzless
+backup/etc/alternatives/lzless.1.gz -> /usr/share/man/man1/xzless.1.gz
+backup/etc/alternatives/lzma -> /usr/bin/xz
+backup/etc/alternatives/lzma.1.gz -> /usr/share/man/man1/xz.1.gz
+backup/etc/alternatives/lzmore -> /usr/bin/xzmore
+backup/etc/alternatives/lzmore.1.gz -> /usr/share/man/man1/xzmore.1.gz
+backup/etc/alternatives/mecab-dictionary -> /var/lib/mecab/dic/ipadic-utf8
+backup/etc/alternatives/mt -> /bin/mt-gnu
+backup/etc/alternatives/mt.1.gz -> /usr/share/man/man1/mt-gnu.1.gz
+backup/etc/alternatives/my.cnf -> /etc/mysql/mysql.cnf
+backup/etc/alternatives/nawk -> /usr/bin/gawk
+backup/etc/alternatives/nawk.1.gz -> /usr/share/man/man1/gawk.1.gz
+backup/etc/alternatives/nc -> /bin/nc.openbsd
+backup/etc/alternatives/nc.1.gz -> /usr/share/man/man1/nc_openbsd.1.gz
+backup/etc/alternatives/netcat -> /bin/nc.openbsd
+backup/etc/alternatives/netcat.1.gz -> /usr/share/man/man1/nc_openbsd.1.gz
+backup/etc/alternatives/newt-palette -> /etc/newt/palette.ubuntu
+backup/etc/alternatives/open -> /usr/bin/xdg-open
+backup/etc/alternatives/open.1.gz -> /usr/share/man/man1/xdg-open.1.gz
+backup/etc/alternatives/pager -> /usr/bin/less
+backup/etc/alternatives/pager.1.gz -> /usr/share/man/man1/less.1.gz
+backup/etc/alternatives/pico -> /bin/nano
+backup/etc/alternatives/pico.1.gz -> /usr/share/man/man1/nano.1.gz
+backup/etc/alternatives/pinentry -> /usr/bin/pinentry-curses
+backup/etc/alternatives/pinentry.1.gz -> /usr/share/man/man1/pinentry-curses.1.gz
+backup/etc/alternatives/pybabel -> /usr/bin/pybabel-python3
+backup/etc/alternatives/rcp -> /usr/bin/scp
+backup/etc/alternatives/rcp.1.gz -> /usr/share/man/man1/scp.1.gz
+backup/etc/alternatives/rlogin -> /usr/bin/slogin
+backup/etc/alternatives/rlogin.1.gz -> /usr/share/man/man1/slogin.1.gz
+backup/etc/alternatives/rmt -> /usr/sbin/rmt-tar
+backup/etc/alternatives/rmt.8.gz -> /usr/share/man/man8/rmt-tar.8.gz
+backup/etc/alternatives/rsh -> /usr/bin/ssh
+backup/etc/alternatives/rsh.1.gz -> /usr/share/man/man1/ssh.1.gz
+backup/etc/alternatives/rview -> /usr/bin/vim.basic
+backup/etc/alternatives/rvim -> /usr/bin/vim.basic
+backup/etc/alternatives/shimx64.efi.signed -> /usr/lib/shim/shimx64.efi.signed.latest
+backup/etc/alternatives/telnet -> /usr/bin/telnet.netkit
+backup/etc/alternatives/telnet.1.gz -> /usr/share/man/man1/telnet.netkit.1.gz
+backup/etc/alternatives/text.plymouth -> /usr/share/plymouth/themes/ubuntu-text/ubuntu-text.plymouth
+backup/etc/alternatives/unlzma -> /usr/bin/unxz
+backup/etc/alternatives/unlzma.1.gz -> /usr/share/man/man1/unxz.1.gz
+backup/etc/alternatives/vi -> /usr/bin/vim.basic
+backup/etc/alternatives/vi.1.gz -> /usr/share/man/man1/vim.1.gz
+backup/etc/alternatives/vi.da.1.gz -> /usr/share/man/da/man1/vim.1.gz
+backup/etc/alternatives/vi.de.1.gz -> /usr/share/man/de/man1/vim.1.gz
+backup/etc/alternatives/vi.fr.1.gz -> /usr/share/man/fr/man1/vim.1.gz
+backup/etc/alternatives/vi.it.1.gz -> /usr/share/man/it/man1/vim.1.gz
+backup/etc/alternatives/vi.ja.1.gz -> /usr/share/man/ja/man1/vim.1.gz
+backup/etc/alternatives/vi.pl.1.gz -> /usr/share/man/pl/man1/vim.1.gz
+backup/etc/alternatives/vi.ru.1.gz -> /usr/share/man/ru/man1/vim.1.gz
+backup/etc/alternatives/view -> /usr/bin/vim.basic
+backup/etc/alternatives/view.1.gz -> /usr/share/man/man1/vim.1.gz
+backup/etc/alternatives/view.da.1.gz -> /usr/share/man/da/man1/vim.1.gz
+backup/etc/alternatives/view.de.1.gz -> /usr/share/man/de/man1/vim.1.gz
+backup/etc/alternatives/view.fr.1.gz -> /usr/share/man/fr/man1/vim.1.gz
+backup/etc/alternatives/view.it.1.gz -> /usr/share/man/it/man1/vim.1.gz
+backup/etc/alternatives/view.ja.1.gz -> /usr/share/man/ja/man1/vim.1.gz
+backup/etc/alternatives/view.pl.1.gz -> /usr/share/man/pl/man1/vim.1.gz
+backup/etc/alternatives/view.ru.1.gz -> /usr/share/man/ru/man1/vim.1.gz
+backup/etc/alternatives/vim -> /usr/bin/vim.basic
+backup/etc/alternatives/vimdiff -> /usr/bin/vim.basic
+backup/etc/alternatives/vtrgb -> /etc/console-setup/vtrgb
+backup/etc/alternatives/which -> /usr/bin/which.debianutils
+backup/etc/alternatives/which.1.gz -> /usr/share/man/man1/which.debianutils.1.gz
+backup/etc/alternatives/which.de1.gz -> /usr/share/man/de/man1/which.debianutils.1.gz
+backup/etc/alternatives/which.es1.gz -> /usr/share/man/es/man1/which.debianutils.1.gz
+backup/etc/alternatives/which.fr1.gz -> /usr/share/man/fr/man1/which.debianutils.1.gz
+backup/etc/alternatives/which.it1.gz -> /usr/share/man/it/man1/which.debianutils.1.gz
+backup/etc/alternatives/which.ja1.gz -> /usr/share/man/ja/man1/which.debianutils.1.gz
+backup/etc/alternatives/which.pl1.gz -> /usr/share/man/pl/man1/which.debianutils.1.gz
+backup/etc/alternatives/which.sl1.gz -> /usr/share/man/sl/man1/which.debianutils.1.gz
+backup/etc/alternatives/write -> /usr/bin/write.ul
+backup/etc/alternatives/write.1.gz -> /usr/share/man/man1/write.ul.1.gz
+backup/etc/alternatives/x-cursor-theme -> /usr/share/icons/Adwaita/cursor.theme
+backup/etc/alternatives/x-terminal-emulator -> /usr/bin/tilix.wrapper
+backup/etc/alternatives/x-terminal-emulator.1.gz -> /usr/share/man/man1/tilix.1.gz
+backup/etc/apache2/
+backup/etc/apache2/apache2.conf
+backup/etc/apache2/envvars
+backup/etc/apache2/magic
+backup/etc/apache2/ports.conf
+backup/etc/apache2/conf-available/
+backup/etc/apache2/conf-available/charset.conf
+backup/etc/apache2/conf-available/javascript-common.conf
+backup/etc/apache2/conf-available/localized-error-pages.conf
+backup/etc/apache2/conf-available/other-vhosts-access-log.conf
+backup/etc/apache2/conf-available/security.conf
+backup/etc/apache2/conf-available/serve-cgi-bin.conf
+backup/etc/apache2/conf-enabled/
+backup/etc/apache2/conf-enabled/charset.conf -> ../conf-available/charset.conf
+backup/etc/apache2/conf-enabled/javascript-common.conf -> ../conf-available/javascript-common.conf
+backup/etc/apache2/conf-enabled/localized-error-pages.conf -> ../conf-available/localized-error-pages.conf
+backup/etc/apache2/conf-enabled/other-vhosts-access-log.conf -> ../conf-available/other-vhosts-access-log.conf
+backup/etc/apache2/conf-enabled/security.conf -> ../conf-available/security.conf
+backup/etc/apache2/conf-enabled/serve-cgi-bin.conf -> ../conf-available/serve-cgi-bin.conf
+backup/etc/apache2/mods-available/
+backup/etc/apache2/mods-available/access_compat.load
+backup/etc/apache2/mods-available/actions.conf
+backup/etc/apache2/mods-available/actions.load
+backup/etc/apache2/mods-available/alias.conf
+backup/etc/apache2/mods-available/alias.load
+backup/etc/apache2/mods-available/allowmethods.load
+backup/etc/apache2/mods-available/asis.load
+backup/etc/apache2/mods-available/auth_basic.load
+backup/etc/apache2/mods-available/auth_digest.load
+backup/etc/apache2/mods-available/auth_form.load
+backup/etc/apache2/mods-available/authn_anon.load
+backup/etc/apache2/mods-available/authn_core.load
+backup/etc/apache2/mods-available/authn_dbd.load
+backup/etc/apache2/mods-available/authn_dbm.load
+backup/etc/apache2/mods-available/authn_file.load
+backup/etc/apache2/mods-available/authn_socache.load
+backup/etc/apache2/mods-available/authnz_fcgi.load
+backup/etc/apache2/mods-available/authnz_ldap.load
+backup/etc/apache2/mods-available/authz_core.load
+backup/etc/apache2/mods-available/authz_dbd.load
+backup/etc/apache2/mods-available/authz_dbm.load
+backup/etc/apache2/mods-available/authz_groupfile.load
+backup/etc/apache2/mods-available/authz_host.load
+backup/etc/apache2/mods-available/authz_owner.load
+backup/etc/apache2/mods-available/authz_user.load
+backup/etc/apache2/mods-available/autoindex.conf
+backup/etc/apache2/mods-available/autoindex.load
+backup/etc/apache2/mods-available/brotli.load
+backup/etc/apache2/mods-available/buffer.load
+backup/etc/apache2/mods-available/cache.load
+backup/etc/apache2/mods-available/cache_disk.conf
+backup/etc/apache2/mods-available/cache_disk.load
+backup/etc/apache2/mods-available/cache_socache.load
+backup/etc/apache2/mods-available/cern_meta.load
+backup/etc/apache2/mods-available/cgi.load
+backup/etc/apache2/mods-available/cgid.conf
+backup/etc/apache2/mods-available/cgid.load
+backup/etc/apache2/mods-available/charset_lite.load
+backup/etc/apache2/mods-available/data.load
+backup/etc/apache2/mods-available/dav.load
+backup/etc/apache2/mods-available/dav_fs.conf
+backup/etc/apache2/mods-available/dav_fs.load
+backup/etc/apache2/mods-available/dav_lock.load
+backup/etc/apache2/mods-available/dbd.load
+backup/etc/apache2/mods-available/deflate.conf
+backup/etc/apache2/mods-available/deflate.load
+backup/etc/apache2/mods-available/dialup.load
+backup/etc/apache2/mods-available/dir.conf
+backup/etc/apache2/mods-available/dir.load
+backup/etc/apache2/mods-available/dump_io.load
+backup/etc/apache2/mods-available/echo.load
+backup/etc/apache2/mods-available/env.load
+backup/etc/apache2/mods-available/expires.load
+backup/etc/apache2/mods-available/ext_filter.load
+backup/etc/apache2/mods-available/file_cache.load
+backup/etc/apache2/mods-available/filter.load
+backup/etc/apache2/mods-available/headers.load
+backup/etc/apache2/mods-available/heartbeat.load
+backup/etc/apache2/mods-available/heartmonitor.load
+backup/etc/apache2/mods-available/http2.conf
+backup/etc/apache2/mods-available/http2.load
+backup/etc/apache2/mods-available/ident.load
+backup/etc/apache2/mods-available/imagemap.load
+backup/etc/apache2/mods-available/include.load
+backup/etc/apache2/mods-available/info.conf
+backup/etc/apache2/mods-available/info.load
+backup/etc/apache2/mods-available/lbmethod_bybusyness.load
+backup/etc/apache2/mods-available/lbmethod_byrequests.load
+backup/etc/apache2/mods-available/lbmethod_bytraffic.load
+backup/etc/apache2/mods-available/lbmethod_heartbeat.load
+backup/etc/apache2/mods-available/ldap.conf
+backup/etc/apache2/mods-available/ldap.load
+backup/etc/apache2/mods-available/log_debug.load
+backup/etc/apache2/mods-available/log_forensic.load
+backup/etc/apache2/mods-available/lua.load
+backup/etc/apache2/mods-available/macro.load
+backup/etc/apache2/mods-available/md.load
+backup/etc/apache2/mods-available/mime.conf
+backup/etc/apache2/mods-available/mime.load
+backup/etc/apache2/mods-available/mime_magic.conf
+backup/etc/apache2/mods-available/mime_magic.load
+backup/etc/apache2/mods-available/mpm_event.conf
+backup/etc/apache2/mods-available/mpm_event.load
+backup/etc/apache2/mods-available/mpm_prefork.conf
+backup/etc/apache2/mods-available/mpm_prefork.load
+backup/etc/apache2/mods-available/mpm_worker.conf
+backup/etc/apache2/mods-available/mpm_worker.load
+backup/etc/apache2/mods-available/negotiation.conf
+backup/etc/apache2/mods-available/negotiation.load
+backup/etc/apache2/mods-available/proxy.conf
+backup/etc/apache2/mods-available/proxy.load
+backup/etc/apache2/mods-available/proxy_ajp.load
+backup/etc/apache2/mods-available/proxy_balancer.conf
+backup/etc/apache2/mods-available/proxy_balancer.load
+backup/etc/apache2/mods-available/proxy_connect.load
+backup/etc/apache2/mods-available/proxy_express.load
+backup/etc/apache2/mods-available/proxy_fcgi.load
+backup/etc/apache2/mods-available/proxy_fdpass.load
+backup/etc/apache2/mods-available/proxy_ftp.conf
+backup/etc/apache2/mods-available/proxy_ftp.load
+backup/etc/apache2/mods-available/proxy_hcheck.load
+backup/etc/apache2/mods-available/proxy_html.conf
+backup/etc/apache2/mods-available/proxy_html.load
+backup/etc/apache2/mods-available/proxy_http.load
+backup/etc/apache2/mods-available/proxy_http2.load
+backup/etc/apache2/mods-available/proxy_scgi.load
+backup/etc/apache2/mods-available/proxy_uwsgi.load
+backup/etc/apache2/mods-available/proxy_wstunnel.load
+backup/etc/apache2/mods-available/ratelimit.load
+backup/etc/apache2/mods-available/reflector.load
+backup/etc/apache2/mods-available/remoteip.load
+backup/etc/apache2/mods-available/reqtimeout.conf
+backup/etc/apache2/mods-available/reqtimeout.load
+backup/etc/apache2/mods-available/request.load
+backup/etc/apache2/mods-available/rewrite.load
+backup/etc/apache2/mods-available/sed.load
+backup/etc/apache2/mods-available/session.load
+backup/etc/apache2/mods-available/session_cookie.load
+backup/etc/apache2/mods-available/session_crypto.load
+backup/etc/apache2/mods-available/session_dbd.load
+backup/etc/apache2/mods-available/setenvif.conf
+backup/etc/apache2/mods-available/setenvif.load
+backup/etc/apache2/mods-available/slotmem_plain.load
+backup/etc/apache2/mods-available/slotmem_shm.load
+backup/etc/apache2/mods-available/socache_dbm.load
+backup/etc/apache2/mods-available/socache_memcache.load
+backup/etc/apache2/mods-available/socache_redis.load
+backup/etc/apache2/mods-available/socache_shmcb.load
+backup/etc/apache2/mods-available/speling.load
+backup/etc/apache2/mods-available/ssl.conf
+backup/etc/apache2/mods-available/ssl.load
+backup/etc/apache2/mods-available/status.conf
+backup/etc/apache2/mods-available/status.load
+backup/etc/apache2/mods-available/substitute.load
+backup/etc/apache2/mods-available/suexec.load
+backup/etc/apache2/mods-available/unique_id.load
+backup/etc/apache2/mods-available/userdir.conf
+backup/etc/apache2/mods-available/userdir.load
+backup/etc/apache2/mods-available/usertrack.load
+backup/etc/apache2/mods-available/vhost_alias.load
+backup/etc/apache2/mods-available/xml2enc.load
+backup/etc/apache2/mods-enabled/
+backup/etc/apache2/mods-enabled/access_compat.load -> ../mods-available/access_compat.load
+backup/etc/apache2/mods-enabled/alias.conf -> ../mods-available/alias.conf
+backup/etc/apache2/mods-enabled/alias.load -> ../mods-available/alias.load
+backup/etc/apache2/mods-enabled/auth_basic.load -> ../mods-available/auth_basic.load
+backup/etc/apache2/mods-enabled/authn_core.load -> ../mods-available/authn_core.load
+backup/etc/apache2/mods-enabled/authn_file.load -> ../mods-available/authn_file.load
+backup/etc/apache2/mods-enabled/authz_core.load -> ../mods-available/authz_core.load
+backup/etc/apache2/mods-enabled/authz_host.load -> ../mods-available/authz_host.load
+backup/etc/apache2/mods-enabled/authz_user.load -> ../mods-available/authz_user.load
+backup/etc/apache2/mods-enabled/autoindex.conf -> ../mods-available/autoindex.conf
+backup/etc/apache2/mods-enabled/autoindex.load -> ../mods-available/autoindex.load
+backup/etc/apache2/mods-enabled/deflate.conf -> ../mods-available/deflate.conf
+backup/etc/apache2/mods-enabled/deflate.load -> ../mods-available/deflate.load
+backup/etc/apache2/mods-enabled/dir.conf -> ../mods-available/dir.conf
+backup/etc/apache2/mods-enabled/dir.load -> ../mods-available/dir.load
+backup/etc/apache2/mods-enabled/env.load -> ../mods-available/env.load
+backup/etc/apache2/mods-enabled/filter.load -> ../mods-available/filter.load
+backup/etc/apache2/mods-enabled/mime.conf -> ../mods-available/mime.conf
+backup/etc/apache2/mods-enabled/mime.load -> ../mods-available/mime.load
+backup/etc/apache2/mods-enabled/mpm_event.conf -> ../mods-available/mpm_event.conf
+backup/etc/apache2/mods-enabled/mpm_event.load -> ../mods-available/mpm_event.load
+backup/etc/apache2/mods-enabled/negotiation.conf -> ../mods-available/negotiation.conf
+backup/etc/apache2/mods-enabled/negotiation.load -> ../mods-available/negotiation.load
+backup/etc/apache2/mods-enabled/proxy.conf -> ../mods-available/proxy.conf
+backup/etc/apache2/mods-enabled/proxy.load -> ../mods-available/proxy.load
+backup/etc/apache2/mods-enabled/proxy_http.load -> ../mods-available/proxy_http.load
+backup/etc/apache2/mods-enabled/reqtimeout.conf -> ../mods-available/reqtimeout.conf
+backup/etc/apache2/mods-enabled/reqtimeout.load -> ../mods-available/reqtimeout.load
+backup/etc/apache2/mods-enabled/setenvif.conf -> ../mods-available/setenvif.conf
+backup/etc/apache2/mods-enabled/setenvif.load -> ../mods-available/setenvif.load
+backup/etc/apache2/mods-enabled/status.conf -> ../mods-available/status.conf
+backup/etc/apache2/mods-enabled/status.load -> ../mods-available/status.load
+backup/etc/apache2/sites-available/
+backup/etc/apache2/sites-available/000-default.conf
+backup/etc/apache2/sites-available/annakozh.conf
+backup/etc/apache2/sites-available/default-ssl.conf
+backup/etc/apache2/sites-enabled/
+backup/etc/apache2/sites-enabled/000-default.conf -> ../sites-available/000-default.conf
+backup/etc/apache2/sites-enabled/annakozh.conf -> ../sites-available/annakozh.conf
+backup/etc/apparmor.d/
+backup/etc/apparmor.d/lsb_release
+backup/etc/apparmor.d/nvidia_modprobe
+backup/etc/apparmor.d/sbin.dhclient
+backup/etc/apparmor.d/usr.bin.man
+backup/etc/apparmor.d/usr.bin.tcpdump
+backup/etc/apparmor.d/usr.lib.snapd.snap-confine.real
+backup/etc/apparmor.d/usr.sbin.mysqld
+backup/etc/apparmor.d/usr.sbin.rsyslogd
+backup/etc/apparmor.d/abi/
+backup/etc/apparmor.d/abi/3.0
+backup/etc/apparmor.d/abi/kernel-5.4-outoftree-network
+backup/etc/apparmor.d/abi/kernel-5.4-vanilla
+backup/etc/apparmor.d/abstractions/
+backup/etc/apparmor.d/abstractions/X
+backup/etc/apparmor.d/abstractions/apache2-common
+backup/etc/apparmor.d/abstractions/aspell
+backup/etc/apparmor.d/abstractions/audio
+backup/etc/apparmor.d/abstractions/authentication
+backup/etc/apparmor.d/abstractions/base
+backup/etc/apparmor.d/abstractions/bash
+backup/etc/apparmor.d/abstractions/consoles
+backup/etc/apparmor.d/abstractions/crypto
+backup/etc/apparmor.d/abstractions/cups-client
+backup/etc/apparmor.d/abstractions/dbus
+backup/etc/apparmor.d/abstractions/dbus-accessibility
+backup/etc/apparmor.d/abstractions/dbus-accessibility-strict
+backup/etc/apparmor.d/abstractions/dbus-network-manager-strict
+backup/etc/apparmor.d/abstractions/dbus-session
+backup/etc/apparmor.d/abstractions/dbus-session-strict
+backup/etc/apparmor.d/abstractions/dbus-strict
+backup/etc/apparmor.d/abstractions/dconf
+backup/etc/apparmor.d/abstractions/dovecot-common
+backup/etc/apparmor.d/abstractions/dri-common
+backup/etc/apparmor.d/abstractions/dri-enumerate
+backup/etc/apparmor.d/abstractions/enchant
+backup/etc/apparmor.d/abstractions/exo-open
+backup/etc/apparmor.d/abstractions/fcitx
+backup/etc/apparmor.d/abstractions/fcitx-strict
+backup/etc/apparmor.d/abstractions/fonts
+backup/etc/apparmor.d/abstractions/freedesktop.org
+backup/etc/apparmor.d/abstractions/gio-open
+backup/etc/apparmor.d/abstractions/gnome
+backup/etc/apparmor.d/abstractions/gnupg
+backup/etc/apparmor.d/abstractions/gtk
+backup/etc/apparmor.d/abstractions/gvfs-open
+backup/etc/apparmor.d/abstractions/hosts_access
+backup/etc/apparmor.d/abstractions/ibus
+backup/etc/apparmor.d/abstractions/kde
+backup/etc/apparmor.d/abstractions/kde-globals-write
+backup/etc/apparmor.d/abstractions/kde-icon-cache-write
+backup/etc/apparmor.d/abstractions/kde-language-write
+backup/etc/apparmor.d/abstractions/kde-open5
+backup/etc/apparmor.d/abstractions/kerberosclient
+backup/etc/apparmor.d/abstractions/ldapclient
+backup/etc/apparmor.d/abstractions/libpam-systemd
+backup/etc/apparmor.d/abstractions/likewise
+backup/etc/apparmor.d/abstractions/mdns
+backup/etc/apparmor.d/abstractions/mesa
+backup/etc/apparmor.d/abstractions/mir
+backup/etc/apparmor.d/abstractions/mozc
+backup/etc/apparmor.d/abstractions/mysql
+backup/etc/apparmor.d/abstractions/nameservice
+backup/etc/apparmor.d/abstractions/nis
+backup/etc/apparmor.d/abstractions/nss-systemd
+backup/etc/apparmor.d/abstractions/nvidia
+backup/etc/apparmor.d/abstractions/opencl
+backup/etc/apparmor.d/abstractions/opencl-common
+backup/etc/apparmor.d/abstractions/opencl-intel
+backup/etc/apparmor.d/abstractions/opencl-mesa
+backup/etc/apparmor.d/abstractions/opencl-nvidia
+backup/etc/apparmor.d/abstractions/opencl-pocl
+backup/etc/apparmor.d/abstractions/openssl
+backup/etc/apparmor.d/abstractions/orbit2
+backup/etc/apparmor.d/abstractions/p11-kit
+backup/etc/apparmor.d/abstractions/perl
+backup/etc/apparmor.d/abstractions/php
+backup/etc/apparmor.d/abstractions/php-worker
+backup/etc/apparmor.d/abstractions/php5
+backup/etc/apparmor.d/abstractions/postfix-common
+backup/etc/apparmor.d/abstractions/private-files
+backup/etc/apparmor.d/abstractions/private-files-strict
+backup/etc/apparmor.d/abstractions/python
+backup/etc/apparmor.d/abstractions/qt5
+backup/etc/apparmor.d/abstractions/qt5-compose-cache-write
+backup/etc/apparmor.d/abstractions/qt5-settings-write
+backup/etc/apparmor.d/abstractions/recent-documents-write
+backup/etc/apparmor.d/abstractions/ruby
+backup/etc/apparmor.d/abstractions/samba
+backup/etc/apparmor.d/abstractions/smbpass
+backup/etc/apparmor.d/abstractions/ssl_certs
+backup/etc/apparmor.d/abstractions/ssl_keys
+backup/etc/apparmor.d/abstractions/svn-repositories
+backup/etc/apparmor.d/abstractions/ubuntu-bittorrent-clients
+backup/etc/apparmor.d/abstractions/ubuntu-browsers
+backup/etc/apparmor.d/abstractions/ubuntu-console-browsers
+backup/etc/apparmor.d/abstractions/ubuntu-console-email
+backup/etc/apparmor.d/abstractions/ubuntu-email
+backup/etc/apparmor.d/abstractions/ubuntu-feed-readers
+backup/etc/apparmor.d/abstractions/ubuntu-gnome-terminal
+backup/etc/apparmor.d/abstractions/ubuntu-helpers
+backup/etc/apparmor.d/abstractions/ubuntu-konsole
+backup/etc/apparmor.d/abstractions/ubuntu-media-players
+backup/etc/apparmor.d/abstractions/ubuntu-unity7-base
+backup/etc/apparmor.d/abstractions/ubuntu-unity7-launcher
+backup/etc/apparmor.d/abstractions/ubuntu-unity7-messaging
+backup/etc/apparmor.d/abstractions/ubuntu-xterm
+backup/etc/apparmor.d/abstractions/user-download
+backup/etc/apparmor.d/abstractions/user-mail
+backup/etc/apparmor.d/abstractions/user-manpages
+backup/etc/apparmor.d/abstractions/user-tmp
+backup/etc/apparmor.d/abstractions/user-write
+backup/etc/apparmor.d/abstractions/video
+backup/etc/apparmor.d/abstractions/vulkan
+backup/etc/apparmor.d/abstractions/wayland
+backup/etc/apparmor.d/abstractions/web-data
+backup/etc/apparmor.d/abstractions/winbind
+backup/etc/apparmor.d/abstractions/wutmp
+backup/etc/apparmor.d/abstractions/xad
+backup/etc/apparmor.d/abstractions/xdg-desktop
+backup/etc/apparmor.d/abstractions/xdg-open
+backup/etc/apparmor.d/abstractions/apparmor_api/
+backup/etc/apparmor.d/abstractions/apparmor_api/change_profile
+backup/etc/apparmor.d/abstractions/apparmor_api/examine
+backup/etc/apparmor.d/abstractions/apparmor_api/find_mountpoint
+backup/etc/apparmor.d/abstractions/apparmor_api/introspect
+backup/etc/apparmor.d/abstractions/apparmor_api/is_enabled
+backup/etc/apparmor.d/abstractions/ubuntu-browsers.d/
+backup/etc/apparmor.d/abstractions/ubuntu-browsers.d/chromium-browser
+backup/etc/apparmor.d/abstractions/ubuntu-browsers.d/java
+backup/etc/apparmor.d/abstractions/ubuntu-browsers.d/kde
+backup/etc/apparmor.d/abstractions/ubuntu-browsers.d/mailto
+backup/etc/apparmor.d/abstractions/ubuntu-browsers.d/multimedia
+backup/etc/apparmor.d/abstractions/ubuntu-browsers.d/plugins-common
+backup/etc/apparmor.d/abstractions/ubuntu-browsers.d/productivity
+backup/etc/apparmor.d/abstractions/ubuntu-browsers.d/text-editors
+backup/etc/apparmor.d/abstractions/ubuntu-browsers.d/ubuntu-integration
+backup/etc/apparmor.d/abstractions/ubuntu-browsers.d/ubuntu-integration-xul
+backup/etc/apparmor.d/abstractions/ubuntu-browsers.d/user-files
+backup/etc/apparmor.d/disable/
+backup/etc/apparmor.d/disable/usr.sbin.rsyslogd -> /etc/apparmor.d/usr.sbin.rsyslogd
+backup/etc/apparmor.d/force-complain/
+backup/etc/apparmor.d/local/
+backup/etc/apparmor.d/local/README
+backup/etc/apparmor.d/local/lsb_release
+backup/etc/apparmor.d/local/nvidia_modprobe
+backup/etc/apparmor.d/local/sbin.dhclient
+backup/etc/apparmor.d/local/usr.bin.man
+backup/etc/apparmor.d/local/usr.bin.tcpdump
+backup/etc/apparmor.d/local/usr.lib.snapd.snap-confine.real
+backup/etc/apparmor.d/local/usr.sbin.mysqld
+backup/etc/apparmor.d/local/usr.sbin.rsyslogd
+backup/etc/apparmor.d/tunables/
+backup/etc/apparmor.d/tunables/alias
+backup/etc/apparmor.d/tunables/apparmorfs
+backup/etc/apparmor.d/tunables/dovecot
+backup/etc/apparmor.d/tunables/etc
+backup/etc/apparmor.d/tunables/global
+backup/etc/apparmor.d/tunables/home
+backup/etc/apparmor.d/tunables/kernelvars
+backup/etc/apparmor.d/tunables/multiarch
+backup/etc/apparmor.d/tunables/proc
+backup/etc/apparmor.d/tunables/run
+backup/etc/apparmor.d/tunables/securityfs
+backup/etc/apparmor.d/tunables/share
+backup/etc/apparmor.d/tunables/sys
+backup/etc/apparmor.d/tunables/xdg-user-dirs
+backup/etc/apparmor.d/tunables/home.d/
+backup/etc/apparmor.d/tunables/home.d/site.local
+backup/etc/apparmor.d/tunables/home.d/ubuntu
+backup/etc/apparmor.d/tunables/multiarch.d/
+backup/etc/apparmor.d/tunables/multiarch.d/site.local
+backup/etc/apparmor.d/tunables/xdg-user-dirs.d/
+backup/etc/apparmor.d/tunables/xdg-user-dirs.d/site.local
+backup/etc/apparmor/
+backup/etc/apparmor/parser.conf
+backup/etc/apparmor/init/
+backup/etc/apparmor/init/network-interface-security/
+backup/etc/apparmor/init/network-interface-security/sbin.dhclient -> ../../../apparmor.d/sbin.dhclient
+backup/etc/apport/
+backup/etc/apport/crashdb.conf
+backup/etc/apport/blacklist.d/
+backup/etc/apport/blacklist.d/README.blacklist
+backup/etc/apport/blacklist.d/apport
+backup/etc/apt/
+backup/etc/apt/sources.list
+backup/etc/apt/apt.conf.d/
+backup/etc/apt/apt.conf.d/01-vendor-ubuntu
+backup/etc/apt/apt.conf.d/01autoremove
+backup/etc/apt/apt.conf.d/10periodic
+backup/etc/apt/apt.conf.d/15update-stamp
+backup/etc/apt/apt.conf.d/20apt-esm-hook.conf
+backup/etc/apt/apt.conf.d/20archive
+backup/etc/apt/apt.conf.d/20auto-upgrades
+backup/etc/apt/apt.conf.d/20packagekit
+backup/etc/apt/apt.conf.d/20snapd.conf
+backup/etc/apt/apt.conf.d/50command-not-found
+backup/etc/apt/apt.conf.d/50unattended-upgrades
+backup/etc/apt/apt.conf.d/70debconf
+backup/etc/apt/apt.conf.d/99needrestart
+backup/etc/apt/apt.conf.d/99update-notifier
+backup/etc/apt/auth.conf.d/
+backup/etc/apt/keyrings/
+backup/etc/apt/preferences.d/
+backup/etc/apt/sources.list.d/
+backup/etc/apt/trusted.gpg.d/
+backup/etc/apt/trusted.gpg.d/ubuntu-keyring-2012-cdimage.gpg
+backup/etc/apt/trusted.gpg.d/ubuntu-keyring-2018-archive.gpg
+backup/etc/bash_completion.d/
+backup/etc/bash_completion.d/apport_completion
+backup/etc/bash_completion.d/git-prompt
+backup/etc/binfmt.d/
+backup/etc/byobu/
+backup/etc/byobu/backend
+backup/etc/byobu/socketdir
+backup/etc/ca-certificates/
+backup/etc/ca-certificates/update.d/
+backup/etc/cloud/
+backup/etc/cloud/build.info
+backup/etc/cloud/cloud.cfg
+backup/etc/cloud/clean.d/
+backup/etc/cloud/clean.d/README
+backup/etc/cloud/cloud.cfg.d/
+backup/etc/cloud/cloud.cfg.d/05_logging.cfg
+backup/etc/cloud/cloud.cfg.d/90_dpkg.cfg
+backup/etc/cloud/cloud.cfg.d/99_custom_networking.cfg
+backup/etc/cloud/cloud.cfg.d/99_ionos.cfg
+backup/etc/cloud/cloud.cfg.d/README
+backup/etc/cloud/templates/
+backup/etc/cloud/templates/chef_client.rb.tmpl
+backup/etc/cloud/templates/chrony.conf.alpine.tmpl
+backup/etc/cloud/templates/chrony.conf.centos.tmpl
+backup/etc/cloud/templates/chrony.conf.cos.tmpl
+backup/etc/cloud/templates/chrony.conf.debian.tmpl
+backup/etc/cloud/templates/chrony.conf.fedora.tmpl
+backup/etc/cloud/templates/chrony.conf.freebsd.tmpl
+backup/etc/cloud/templates/chrony.conf.opensuse-leap.tmpl
+backup/etc/cloud/templates/chrony.conf.opensuse-microos.tmpl
+backup/etc/cloud/templates/chrony.conf.opensuse-tumbleweed.tmpl
+backup/etc/cloud/templates/chrony.conf.opensuse.tmpl
+backup/etc/cloud/templates/chrony.conf.photon.tmpl
+backup/etc/cloud/templates/chrony.conf.rhel.tmpl
+backup/etc/cloud/templates/chrony.conf.sle-micro.tmpl
+backup/etc/cloud/templates/chrony.conf.sle_hpc.tmpl
+backup/etc/cloud/templates/chrony.conf.sles.tmpl
+backup/etc/cloud/templates/chrony.conf.ubuntu.tmpl
+backup/etc/cloud/templates/host.mariner.tmpl
+backup/etc/cloud/templates/hosts.alpine.tmpl
+backup/etc/cloud/templates/hosts.arch.tmpl
+backup/etc/cloud/templates/hosts.debian.tmpl
+backup/etc/cloud/templates/hosts.freebsd.tmpl
+backup/etc/cloud/templates/hosts.gentoo.tmpl
+backup/etc/cloud/templates/hosts.photon.tmpl
+backup/etc/cloud/templates/hosts.redhat.tmpl
+backup/etc/cloud/templates/hosts.suse.tmpl
+backup/etc/cloud/templates/ntp.conf.alpine.tmpl
+backup/etc/cloud/templates/ntp.conf.debian.tmpl
+backup/etc/cloud/templates/ntp.conf.fedora.tmpl
+backup/etc/cloud/templates/ntp.conf.freebsd.tmpl
+backup/etc/cloud/templates/ntp.conf.opensuse.tmpl
+backup/etc/cloud/templates/ntp.conf.photon.tmpl
+backup/etc/cloud/templates/ntp.conf.rhel.tmpl
+backup/etc/cloud/templates/ntp.conf.sles.tmpl
+backup/etc/cloud/templates/ntp.conf.ubuntu.tmpl
+backup/etc/cloud/templates/ntpd.conf.openbsd.tmpl
+backup/etc/cloud/templates/resolv.conf.tmpl
+backup/etc/cloud/templates/sources.list.debian.tmpl
+backup/etc/cloud/templates/sources.list.ubuntu.tmpl
+backup/etc/cloud/templates/systemd.resolved.conf.tmpl
+backup/etc/cloud/templates/timesyncd.conf.tmpl
+backup/etc/console-setup/
+backup/etc/console-setup/ISO-8859-1.acm
+backup/etc/console-setup/Uni2-Fixed16.psf.gz
+backup/etc/console-setup/cached_ISO-8859-1.acm.gz
+backup/etc/console-setup/cached_ISO-8859-1_del.kmap.gz
+backup/etc/console-setup/cached_UTF-8_del.kmap.gz
+backup/etc/console-setup/cached_Uni2-Fixed16.psf.gz
+backup/etc/console-setup/cached_setup_font.sh
+backup/etc/console-setup/cached_setup_keyboard.sh
+backup/etc/console-setup/cached_setup_terminal.sh
+backup/etc/console-setup/compose.ARMSCII-8.inc
+backup/etc/console-setup/compose.CP1251.inc
+backup/etc/console-setup/compose.CP1255.inc
+backup/etc/console-setup/compose.CP1256.inc
+backup/etc/console-setup/compose.GEORGIAN-ACADEMY.inc
+backup/etc/console-setup/compose.GEORGIAN-PS.inc
+backup/etc/console-setup/compose.IBM1133.inc
+backup/etc/console-setup/compose.ISIRI-3342.inc
+backup/etc/console-setup/compose.ISO-8859-1.inc
+backup/etc/console-setup/compose.ISO-8859-10.inc
+backup/etc/console-setup/compose.ISO-8859-11.inc
+backup/etc/console-setup/compose.ISO-8859-13.inc
+backup/etc/console-setup/compose.ISO-8859-14.inc
+backup/etc/console-setup/compose.ISO-8859-15.inc
+backup/etc/console-setup/compose.ISO-8859-16.inc
+backup/etc/console-setup/compose.ISO-8859-2.inc
+backup/etc/console-setup/compose.ISO-8859-3.inc
+backup/etc/console-setup/compose.ISO-8859-4.inc
+backup/etc/console-setup/compose.ISO-8859-5.inc
+backup/etc/console-setup/compose.ISO-8859-6.inc
+backup/etc/console-setup/compose.ISO-8859-7.inc
+backup/etc/console-setup/compose.ISO-8859-8.inc
+backup/etc/console-setup/compose.ISO-8859-9.inc
+backup/etc/console-setup/compose.KOI8-R.inc
+backup/etc/console-setup/compose.KOI8-U.inc
+backup/etc/console-setup/compose.TIS-620.inc
+backup/etc/console-setup/compose.VISCII.inc
+backup/etc/console-setup/remap.inc
+backup/etc/console-setup/vtrgb
+backup/etc/console-setup/vtrgb.vga
+backup/etc/cron.d/
+backup/etc/cron.d/.placeholder
+backup/etc/cron.d/e2scrub_all
+backup/etc/cron.daily/
+backup/etc/cron.daily/.placeholder
+backup/etc/cron.daily/apache2
+backup/etc/cron.daily/apport
+backup/etc/cron.daily/apt-compat
+backup/etc/cron.daily/dpkg
+backup/etc/cron.daily/logrotate
+backup/etc/cron.daily/man-db
+backup/etc/cron.hourly/
+backup/etc/cron.hourly/.placeholder
+backup/etc/cron.monthly/
+backup/etc/cron.monthly/.placeholder
+backup/etc/cron.weekly/
+backup/etc/cron.weekly/.placeholder
+backup/etc/cron.weekly/man-db
+backup/etc/cryptsetup-initramfs/
+backup/etc/cryptsetup-initramfs/conf-hook
+backup/etc/dbus-1/
+backup/etc/dbus-1/session.d/
+backup/etc/dbus-1/system.d/
+backup/etc/dbus-1/system.d/com.ubuntu.SoftwareProperties.conf
+backup/etc/dbus-1/system.d/org.freedesktop.PackageKit.conf
+backup/etc/dconf/
+backup/etc/dconf/db/
+backup/etc/default/
+backup/etc/default/apache-htcacheclean
+backup/etc/default/apport
+backup/etc/default/console-setup
+backup/etc/default/cron
+backup/etc/default/cryptdisks
+backup/etc/default/dbus
+backup/etc/default/grub
+backup/etc/default/irqbalance
+backup/etc/default/keyboard
+backup/etc/default/locale
+backup/etc/default/mdadm
+backup/etc/default/motd-news
+backup/etc/default/networkd-dispatcher
+backup/etc/default/open-iscsi
+backup/etc/default/pollinate
+backup/etc/default/rsync
+backup/etc/default/ssh
+backup/etc/default/ufw
+backup/etc/default/useradd
+backup/etc/default/grub.d/
+backup/etc/default/grub.d/50-cloudimg-settings.cfg
+backup/etc/default/grub.d/init-select.cfg
+backup/etc/depmod.d/
+backup/etc/depmod.d/ubuntu.conf
+backup/etc/dhcp/
+backup/etc/dhcp/debug
+backup/etc/dhcp/dhclient.conf
+backup/etc/dhcp/dhclient-enter-hooks.d/
+backup/etc/dhcp/dhclient-enter-hooks.d/debug -> ../debug
+backup/etc/dhcp/dhclient-enter-hooks.d/resolved-enter
+backup/etc/dhcp/dhclient-exit-hooks.d/
+backup/etc/dhcp/dhclient-exit-hooks.d/debug -> ../debug
+backup/etc/dhcp/dhclient-exit-hooks.d/hook-dhclient
+backup/etc/dhcp/dhclient-exit-hooks.d/resolved
+backup/etc/dhcp/dhclient-exit-hooks.d/rfc3442-classless-routes
+backup/etc/dhcp/dhclient-exit-hooks.d/timesyncd
+backup/etc/dpkg/
+backup/etc/dpkg/dpkg.cfg
+backup/etc/dpkg/shlibs.default
+backup/etc/dpkg/shlibs.override
+backup/etc/dpkg/dpkg.cfg.d/
+backup/etc/dpkg/dpkg.cfg.d/needrestart
+backup/etc/dpkg/origins/
+backup/etc/dpkg/origins/debian
+backup/etc/dpkg/origins/default -> ubuntu
+backup/etc/dpkg/origins/ubuntu
+backup/etc/environment.d/
+backup/etc/environment.d/90qt-a11y.conf
+backup/etc/fonts/
+backup/etc/fonts/fonts.conf

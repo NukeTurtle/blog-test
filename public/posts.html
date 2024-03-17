@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/main.css">
+  <script src="./js/bootstrap.min.js"></script>
+  <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+  <title>Anna - posts</title>
+  <style>
+    svg.logo {
+  display: none !important;
+}
+  </style>
+  <script>
+    function updateURL(itemName) {
+      window.history.pushState({}, '', itemName);
+    }
+  </script>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="posts">Posts</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+    <div class="logo-container mx-auto">
+    </div>
+
+    <div id="postList">
+      <!-- Posts will be displayed here -->
+    </div>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        // Function to fetch and display post data
+        function fetchAndDisplayPosts() {
+            fetch('/api/posts')
+            .then((response) => response.json())
+            .then((data) => {
+                // Create a list of posts
+                const postList = data.reverse().map((post) => {
+                    const inputDateString = post.postDate;
+                    const inputDate = new Date(inputDateString);
+                    const options = { year: 'numeric', month: 'short', day: 'numeric' };
+                    const formattedDate = new Intl.DateTimeFormat('en-UK', options).format(inputDate);
+                    const promotedClass = post.postPromoted === 1 ? 'promoted' : '';
+
+                    return `
+                        <div class="post ${promotedClass}">
+                            <img class="post-image" src="/uploads/${post.postImage}">
+                            <h3>${post.postTitle}</h3>
+                            <p><strong>Description:</strong> ${post.postDescription}</p>
+                            <p><strong>Content:</strong> ${post.postContent}</p>
+                            <p><strong>Promoted:</strong> ${post.postPromoted}</p>
+                            <p><strong>Published on</strong> ${formattedDate}</p>
+                        </div>
+                        `;
+                }).join('');
+
+                // Display the list of posts in the postList div
+                document.getElementById('postList').innerHTML = postList;
+            })
+            .catch((error) => {
+                console.error('Error fetching post data:', error);
+            });
+        }
+
+        // Call the function to fetch and display posts when the page loads
+        window.onload = fetchAndDisplayPosts;
+
+        });
+    </script>
+
+    <div class="uniform_box footer">
+    </div>
+
+</body>
+</html>

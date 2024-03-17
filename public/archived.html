@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1.0, user-scalable=0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const archivedPostList = document.getElementById('archived-post-list');
+
+        // Function to fetch and display archived posts
+        function fetchAndDisplayArchivedPosts() {
+            fetch('/archived-posts')
+                .then((response) => response.json())
+                .then((data) => {
+                    displayArchivedPosts(data);
+                })
+                .catch((error) => {
+                    console.error('Error fetching archived posts:', error);
+                });
+        }
+
+        // Function to display archived posts
+        function displayArchivedPosts(posts) {
+            archivedPostList.innerHTML = posts.map((post) => {
+                // Render each archived post here
+                return `
+                    <div class="archived-post">
+                        <h3>${post.postTitle}</h3>
+                        <p>${post.postDescription}</p>
+                        <!-- Add any other details you want to display -->
+                    </div>
+                `;
+            }).join('');
+        }
+
+        // Fetch and display archived posts when the page loads
+        fetchAndDisplayArchivedPosts();
+    });
+
+    </script>
+</body>
+</html>

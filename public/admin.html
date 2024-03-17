@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1.0, user-scalable=0">
+    <link rel="stylesheet" href="/css/main.css">
+    <!-- <link rel="stylesheet" href="/css/bootstrap.min.css"> -->
+    <script src="/js/popper.min.js"></script>
+    <!-- <script src="/js/bootstrap.min.js"></script> -->
+    <link rel="shortcut icon" href="./images/favicon.jpg" type="image/x-icon">
+    <script src="https://cdn.tiny.cloud/1/kpznlqae4walhq6i41rs9jkuah5pjtiogutybwtdwyid3k8z/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            tinymce.init({
+                selector: '#postContent',
+                branding: false,
+                height: 400,
+                menubar: false, // Enable if Menu bar is needed
+                plugins: 'lists link charmap anchor image media table emoticons wordcount',
+                images_upload_url: '/addOrEditPost',
+                removed_menuitems: 'file',
+                toolbar: 'undo redo | formatselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image media table | anchor emoticons',
+                content_style: 'body { font-family: "Roboto Regular", sans-serif; font-size: 1em; }',
+                content_css: '/css/main.css',
+            });
+        });
+      </script>
+    <title>Admin - Post Manager</title>
+</head>
+<body style="width:80%;margin:0 auto;">
+
+    <div id="deleteModal" class="modal">
+        <div class="modal-content">
+            <h3>Confirm Deletion</h3>
+            <p>Are you sure you want to DELETE this post?</p>
+            <span class="small">* Deletion is irreversible!</span>
+            <div class="modal-actions">
+                <button class="cancel-delete">Cancel</button>
+                <button class="confirm-delete">Delete</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="archived-menu">
+        <button id="view-archived-posts">Show Archived Posts</button>
+    </div>
+
+    <div id="archived-content" style="display: none;">
+        <h1 style="text-align:center;">Archived Posts</h1>
+        <hr>
+        <div id="archived-post-list"></div>
+    </div>
+
+    <div id="main-content">
+        <h1 style="text-align:center;">Post Admin</h1>
+        <hr>
+        <form id="postForm" action="/addOrEditPost" method="post">
+            <label class="form-label" for="postTitle">Title:</label><br>
+            <input class="form-text" type="text" id="postTitle" name="postTitle" placeholder="Post Title" required><br><br>
+            <label class="form-label" for="postType">Type:</label><br>
+            <select name="postType" id="postType">
+                <option value="Case study" selected aria-selected="true">Case study</option>
+                <option value="Quick tip">Quick tip</option>
+                <option value="Critique">Critique</option>
+            </select>
+            <br><br>
+            <label class="form-label" for="postDescription">Description:</label><br>
+            <input class="form-text" type="text" id="postDescription" name="postDescription" placeholder="Post Description"><br><br>
+            <label class="form-label" for="postContent">Content:</label><br>
+            <textarea id="postContent" name="postContent" rows="4"></textarea><br><br>
+            <input type="file" id="postImage" name="postImage"><br><br>
+            <div class="promo">
+            <label for="postPromoted">Promote this post:</label>
+            <input type="checkbox" name="postPromoted" id="postPromoted">
+            </div><br><br>
+            <input type="hidden" id="postId" name="postId">
+            <input class="form-text" type="submit" value="Save">
+            <button id="previewButton" value="Preview">Preview</button>
+        </form>
+        <hr>
+
+        <h1 style="text-align:center;">All Posts</h1>
+        <input type="text" id="searchInput" placeholder="Search posts by title or content">
+
+        <table id="postList">
+            <!-- Posts will be displayed here -->
+        </table>
+    </div>
+
+    <div id="toast-container"></div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {          
+        // Function to fetch and display post data
+        function fetchAndDisplayPosts() {
+            fetch('/posts')
+            .then((response) => response.json())
+            .then((data) => {
+                // Create a list of posts
+                const postList = data.reverse().map((post) => {
+                    const inputDateString = post.postDate;
+                    const inputDate = new Date(inputDateString);
+                    const options = { year: 'numeric', month: 'short', day: 'numeric' };
+                    const formattedDate = new Intl.DateTimeFormat('en-UK', options).format(inputDate);
+                    const promotedClass = post.postPromoted === 1 ? 'promoted' : '';
+                    const publishedClass = post.postPublished ? 'published' : 'unpublished';
+
+                    return `
+                        <tr class="${publishedClass}">
+                            <td class="edit-post" data-postId="${post.postId}">${post.postTitle}</td>
+                            <td>${formattedDate}</td>
+                            <td class="post_type" style="width: 10rem;">${post.postType}</td>
+                            <td style="width: 8rem;"><a href="/posts/${post.postId}" target="_new">Post ID #${post.postId}</a></td>
+                            <td>
+                                <button class="delete-post-button" data-postId="${post.postId}">Delete</button>
+                                <button style="width: 6rem;" class="publish-post-button" data-postId="${post.postId}" data-published="${post.postPublished}">
+                                    ${post.postPublished ? 'Unpublish' : 'Publish'}
+                                </button>
+                            </td>
+                        </tr>
+                    `;                    
+                }).join('');
+
+                // Display the list of posts in the postList div
+                document.getElementById('postList').innerHTML = postList;
+            })
+            .catch((error) => {
+                showToast('Error fetching post data:<br>' + error, 'error');
+            });
+        }
+
+        const viewArchivedButton = document.getElementById('view-archived-posts');
+        const mainContent = document.getElementById('main-content');
+        const archivedContent = document.getElementById('archived-content');
+        const archivedPostList = document.getElementById('archived-post-list');
+
+        // Function for rendering archived posts
+        function fetchAndDisplayArchivedPosts() {
+            fetch('/archived-posts')
+                .then((response) => response.json())
+                .then((data) => {
+                    displayArchivedPosts(data);
+                })
+                .catch((error) => {
+                    showToast('Error fetching archived posts:<br>' + error, 'error');
+                });
+        }
+
+        // Function to display archived posts
+        function displayArchivedPosts(posts) {
+            archivedPostList.innerHTML = posts.map((post) => {
+                const inputDateString = post.postDate;
+                const inputDate = new Date(inputDateString);
+                const options = { year: 'numeric', month: 'short', day: 'numeric' };
+                const formattedDate = new Intl.DateTimeFormat('en-UK', options).format(inputDate);
+                const promotedClass = post.postPromoted === 1 ? 'promoted' : '';
+                const publishedClass = post.postPublished ? 'published' : '';
+
+                // Render each archived post here
+                return `
+                     <div class="archived-post ${publishedClass} ${promotedClass}" data-postId="${post.postId}">
+                        <h3>${post.postTitle}</h3>
+                        <p><strong>Promoted:</strong> ${post.postPromoted === 1 ? "Yes" : "No"}</p>
+                        <p><strong>Published on</strong> ${formattedDate}</p>
+                        <button class="delete-post-button" data-postId="${post.postId}">Delete</button>
+                        <button class="publish-post-button" data-postId="${post.postId}" data-published="${post.postPublished}">
+                            ${post.postPublished ? 'Unpublish' : 'Publish'}
+                        </button>
+                        <button class="unarchive-post-button" data-postId="${post.postId}">Unarchive</button>
+                    </div>
+                `;
+            }).join('');
+        }
+
+        fetchAndDisplayArchivedPosts();
+
+        // Add a toggle event to the Archived Posts button
+        viewArchivedButton.addEventListener('click', () => {
+            if (archivedContent.style.display === 'none') {
+                // Show archived content and hide main content
+                fetchAndDisplayArchivedPosts();
+                archivedContent.style.display = 'block';
+                mainContent.style.display = 'none';
+                viewArchivedButton.innerHTML = "Show Posts"
+            } else {
+                // Show main content and hide archived content
+                fetchAndDisplayPosts();
+                archivedContent.style.display = 'none';
+                mainContent.style.display = 'block';
+                viewArchivedButton.innerHTML = "Show Archived Posts"
+            }
+        });
+
+        // Event listener for archiving a post
+        document.addEventListener('click', (e) => {
+            const archiveButton = e.target.closest('.archive-post-button');
+            const unarchiveButton = e.target.closest('.unarchive-post-button');
+            if (archiveButton) {
+                // Extract the post ID from the button's data attribute
+                const postId = archiveButton.getAttribute('data-postId');
+                
+                // Call an API endpoint to archive the post
+                fetch(`/archivePost/${postId}`, { method: 'POST' })
+                .then((response) => response.json())
+                .then((data) => {                    
+                    // Update the display of the archived post
+                    const archivedPost = document.querySelector(`.post[data-postId="${postId}"]`);
+                    if (archivedPost) {
+                        archivedPost.style.display = 'none';
+                        showToast(data.message, 'success');
+                    }
+                })
+                .catch((error) => {
+                    showToast(data.message + "<br>" + error, 'error');
+                });
+            }
+
+            // Event listener for unarchiving a post
+            if (unarchiveButton) {
+                // Extract the post ID from the button's data attribute
+                const postId = unarchiveButton.getAttribute('data-postId');
+                
+                // Call an API endpoint to unarchive the post
+                fetch(`/unarchivePost/${postId}`, { method: 'POST' })
+                .then((response) => response.json())
+                .then((data) => {
+                    // Update the display of the Unarchived post
+                    console.log("post unarchived")
+                    const unarchivedPost = document.querySelector(`.archived-post[data-postId="${postId}"]`);
+                    if (unarchivedPost) {
+                        unarchivedPost.style.display = 'none';
+                        showToast(data.message, 'success');
+                    }
+                })
+                .catch((error) => {
+                    showToast('Error unarchiving the post:<br>' + error, 'error');
+                });
+            }
+        });
+
+        // Call the function to fetch and display posts when the page loads
+        window.onload = fetchAndDisplayPosts;
+        const postForm = document.getElementById('postForm');
+        postForm.addEventListener('submit', async (e) => {
+            e.preventDefault();
+
+            // Collect form data
+            const postId = document.getElementById('postId').value;
+            const postTitle = document.getElementById('postTitle').value;
+            const postDescription = document.getElementById('postDescription').value;
+            const postContent = tinymce.get("postContent").getContent();
+            const postPromoted = document.getElementById('postPromoted').checked ? 1 : 0;
+            const postDate = new Date().toISOString().slice(0, 19).replace('T', ' ');
+            const postType = document.getElementById('postType').value;
+            
+            // Create a FormData object to send the form data
+            const formData = new FormData();
+            formData.append('postId', postId);
+            formData.append('postTitle', postTitle);
+            formData.append('postDescription', postDescription);
+            formData.append('postContent', postContent);
+            formData.append('postPromoted', postPromoted);
+            formData.append('postDate', postDate);
+            formData.append('postType', postType);
+
+            const postImageInput = document.getElementById('postImage');
+            const selectedImage = postImageInput.files[0];
+
+            if (selectedImage) {
+                formData.append('postImage', selectedImage);
+            }
+
+            // Send the FormData object in the POST request to /addOrEditPost
+            try {
+                const response = await fetch('/addOrEditPost', {
+                    method: 'POST',
+                    body: formData,
+                });
+
+                // Reset the form and refresh post list
+                if (response.ok) {
+                    postForm.reset();
+                    fetchAndDisplayPosts();
+                    showToast("Sucessfully changed the post!", "success")
+                    // fetchAndRefreshLatestPost();
+                } else {
+                    showToast("Error adding/editing post. Please try again 1.", "error");
+                }
+            } catch (error) {
+                showToast("Error adding/editing post. Please try again 2.", "error");
+            }
+        });
+
+        const deleteModal = document.getElementById('deleteModal');
+        const confirmDeleteButton = document.querySelector('.confirm-delete');
+        const cancelDeleteButton = document.querySelector('.cancel-delete');
+        let postIdToDelete = null;
+
+        // Open the delete modal when clicking the "Delete" button
+        document.addEventListener('click', (e) => {
+            const deleteButton = e.target.closest('.delete-post-button');
+            if (deleteButton) {
+                postIdToDelete = deleteButton.getAttribute('data-postId');
+                deleteModal.style.display = 'block';
+            }
+        });
+
+        // Close the delete modal when clicking "Cancel"
+        cancelDeleteButton.addEventListener('click', () => {
+            deleteModal.style.display = 'none';
+            postIdToDelete = null;
+        });
+
+        // Handle delete when clicking "Delete"
+        confirmDeleteButton.addEventListener('click', async () => {
+            if (postIdToDelete) {
+                // Send a request to your server to delete the post by postId
+                try {
+                    const response = await fetch(`/deletePost/${postIdToDelete}`, {
+                        method: 'POST',
+                    });
+
+                    if (response.ok) {
+                        // Successfully deleted
+                        deleteModal.style.display = 'none';
+                        postIdToDelete = null;
+                        showToast('Post successfully deleted', 'success');
+                        // Fetch and refresh the post list
+                        fetchAndDisplayPosts();
+                    } else {
+                        // Handle deletion error
+                        console.error('Error deleting post.');
+                        showToast(response, 'error');
+                    }
+                } catch (error) {
+                    console.error('Error deleting post:', error);
+                    showToast(response, 'error');
+                }
+            }
+        });
+
+        });
+
+        document.addEventListener('click', (e) => {
+            const publishButton = e.target.closest('.publish-post-button');
+            if (publishButton) {
+                const post = publishButton.closest('tr');
+                if (post) {
+                    if (post.classList.contains('published')) {
+                        post.classList.remove('published');
+                        post.classList.add('unpublished');
+                    } else {
+                        post.classList.remove('unpublished');
+                        post.classList.add('published');
+                    }
+                }
+                const postId = publishButton.getAttribute('data-postId');
+                const published = publishButton.getAttribute('data-published');
+                const newPublished = published === '1' ? '0' : '1';
+
+                // Make an AJAX request to update the publish status
+                fetch(`/publishPost/${postId}/${newPublished}`, {
+                    method: 'POST',
+                })
+                .then((response) => response.json())
+                .then((data) => {
+                    if (data.success) {
+                        // Update the button text and data-published attribute
+                        publishButton.setAttribute('data-published', newPublished);
+                        publishButton.textContent = newPublished === '1' ? 'Unpublish' : 'Publish';
+
+                        // Show different toast messages based on the publish status
+                        if (newPublished === '1') {
+                            showToast('Post published successfully.', 'success');
+                        } else {
+                            showToast('Post unpublished successfully.', 'success');
+                        }
+                    }
+                })
+                .catch((error) => {
+                    showToast("Error updating post publish status:<br>" + error, "error");
+                });
+            }
+        });
+
+        document.addEventListener('click', (e) => {
+            const editButton = e.target.closest('.edit-post');
+            if (editButton) {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+
+                const postId = editButton.getAttribute('data-postId');
+                // Fetch the post data for editing
+                fetch(`/edit/${postId}`)
+                .then((response) => response.json())
+                .then((postData) => {
+                    if (postData) {
+                        const editForm = document.getElementById('postForm');
+                        editForm.elements.postTitle.value = postData.postTitle;
+                        editForm.elements.postType.value = postData.postType;
+                        editForm.elements.postDescription.value = postData.postDescription;
+                        tinyMCE.get('postContent').setContent(postData.postContent);
+                        editForm.elements.postPromoted.checked = postData.postPromoted === 1;
+                        if (postData.postImage) {
+                            const postImageInput = document.getElementById('postImage');
+                            // Set the value to an empty string (clear the file input) since we don't want to change the image by default
+                            postImageInput.value = '';
+                        }
+                        editForm.elements.postId.value = postData.postId;
+                        editForm.action = '/addOrEditPost';
+                    }
+                })
+                .catch((error) => {
+                    showToast('Error fetching post data for editing:<br>' + error, 'error');
+                });
+            }
+        });
+
+        const searchInput = document.getElementById('searchInput');
+        let allPosts = [];
+        const postList = document.getElementById('postList');
+
+        // Fetch and display all posts
+        function fetchAndDisplayPosts() {
+            fetchAndDisplayPosts = function(){};
+            fetch('/posts')
+            .then((response) => response.json())
+            .then((data) => {
+                allPosts = data;
+                displayFilteredPosts(allPosts);
+            })
+            .catch((error) => {
+                showToast('Error fetching post data:<br>' + error, 'error');
+            });
+        }
+
+        // Function to display filtered posts
+        function displayFilteredPosts(posts) {
+            const query = searchInput.value.toLowerCase();
+            const filtered = posts.filter((post) => {
+                const title = post.postTitle.toLowerCase();
+                const content = post.postContent.toLowerCase();
+                return title.includes(query) || content.includes(query);
+            });
+
+            if (query !== '') {
+                // Display the filtered posts
+                postList.innerHTML = filtered.map((post) => {
+                    const inputDateString = post.postDate;
+                    const inputDate = new Date(inputDateString);
+                    const options = { year: 'numeric', month: 'short', day: 'numeric' };
+                    const formattedDate = new Intl.DateTimeFormat('en-UK', options).format(inputDate);
+                    const promotedClass = post.postPromoted === 1 ? 'promoted' : '';
+                    const publishedClass = post.postPublished ? 'published' : '';
+
+                    return `
+                        <tr class="${publishedClass}">
+                            <td class="edit-post" data-postId="${post.postId}">${post.postTitle}</td>
+                            <td>${formattedDate}</td>
+                            <td style="width: 8rem;">${post.postType}</td>
+                            <td><a href="/posts/${post.postId}" target="_new">Post ID #${post.postId}</a></td>
+                            <td>
+                                <button class="delete-post-button" data-postId="${post.postId}">Delete</button>
+                                <button class="publish-post-button" data-postId="${post.postId}" data-published="${post.postPublished}">
+                                    ${post.postPublished ? 'Unpublish' : 'Publish'}
+                                </button>
+                            </td>
+                        </tr>
+                    `;
+                }).join('');
+            } else {
+                // When the search input is empty, re-fetch all posts and sort by postPromoted
+                fetchAndDisplayPosts();
+    }
+        }
+
+        // Update filtered posts when the search input changes
+        searchInput.addEventListener('input', () => {
+            displayFilteredPosts(allPosts);
+        });
+
+        // Initial fetch and display
+        fetchAndDisplayPosts();
+
+        // Function to fetch the post content
+        function getPostContent(postId) {
+            return fetch(`/posts/${postId}`)
+            .then((response) => response.text())
+            .then((html) => {
+                // Parse the HTML content to extract post data
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(html, 'text/html');
+                const titleElement = doc.querySelector('h1');
+                const postElement = doc.getElementById('singlePost');
+
+                return postElement ? postElement.outerHTML : 'Post not found';
+                
+            })
+            .catch((error) => {
+                showToast('Error fetching post content:<br>' + error, 'error');
+                return 'Error fetching post content.';
+            });
+        }
+
+        // Function for user login
+        function login() {
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+
+            // Send a request to your server to validate the login credentials
+            fetch('/login', {
+                method: 'POST',
+                body: JSON.stringify({ username, password }),
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+            })
+            .then((response) => {
+                if (response.status === 200) {
+                    // Successful login, redirect to the admin page
+                    window.location.href = '/admin';
+                } else {
+                    alert('Invalid username or password');
+                }
+            });
+        }
+
+        // Display toasts
+        const toastContainer = document.getElementById('toast-container');
+
+        function showToast(message, type) {
+            const toast = document.createElement('div');
+            toast.classList.add('toast', type);
+            toast.innerText = message;
+            toastContainer.appendChild(toast);
+
+            // Automatically remove the toast after 2 seconds
+            setTimeout(() => {
+                toast.style.opacity = '1';
+                setTimeout(() => {
+                    toast.style.opacity = '0';
+                    setTimeout(() => {
+                        toast.remove();
+                    }, 500);
+                }, 2000);
+            }, 100);
+        }
+    </script>
+</body>
+</html>

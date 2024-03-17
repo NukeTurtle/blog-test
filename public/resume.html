@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1.0, user-scalable=0">
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/main.css">
+  <script src="./js/bootstrap.min.js"></script>
+  <link rel="shortcut icon" href="./images/favicon.jpg" type="image/x-icon">
+  <title>Anna - Contacts</title>
+  <script>
+    function updateURL(itemName) {
+      window.history.pushState({}, '', itemName);
+    }
+  </script>
+
+</head>
+<body>
+
+  <nav class="navbar">
+    <ul class="navbar-nav me-auto">
+      <li class="nav-item">
+        <a class="" aria-current="page" href="/">About</a>
+      </li>
+    </ul>
+  </nav>
+
+    <div class="block">
+      <div class="resume-text"><h1>Download my resume</h1></div>
+      <div class="resume-placeholder" onclick="">
+        <div class="resume">
+          <div class="resume-inner-text">
+            <p style="color: #434242;">Anna Kozhevnikova</p>
+            <p><span style="color: #434242;">UI / </span> <span style="color: #969292;">UX</span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const placeholder = document.querySelector('.resume-placeholder');
+
+        placeholder.addEventListener('click', function() {
+            // Replace 'your_pdf_url.pdf' with the actual URL of your PDF file
+            const pdfUrl = '../uploads/love_language.pdf';
+
+            // Open a new tab with the PDF
+            window.open(pdfUrl, '_blank');
+        });
+      });
+    </script>
+
+</body>
+</html>
